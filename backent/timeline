@@ -1,0 +1,71 @@
+Timeline to proficiency
+
+Month 1 — Solidify the Core
+You finish tightening the fundamentals you already know:
+    Clean Express architecture
+    Controllers/services separation
+    Error handling patterns
+    Environment configs
+    SQL fluency (joins, indexes, constraints)
+    Using an ORM (Prisma or Drizzle)
+    Building 2–3 clean CRUD modules
+Outcome: You stop “figuring things out” and start flowing.
+
+
+
+
+Month 2 — Authentication + Real API Features
+This is where you level up fast.
+    JWT + refresh tokens
+    Sessions vs tokens
+    Role-based access
+    File uploads
+    Pagination, filtering, sorting
+    Redis caching
+    Rate limiting
+    Logging + monitoring
+Outcome: You can build a production-style API with multiple modules.
+
+
+
+
+Month 3 — Testing + Deployment
+This is where you become dangerous.
+    Unit tests (Jest)
+    Integration tests
+    Mocking DB calls
+    Docker basics
+    Deploying to Render/Railway/Azure
+    CI/CD with GitHub Actions
+    Linux basics (SSH, firewalls, PM2)
+Outcome: You can deploy and maintain your own backend.
+
+
+
+
+Month 4 — Architecture + Scaling
+Now you start thinking like an engineer.
+    MVC, service layers, repository patterns
+    Caching strategies
+    Message queues (BullMQ)
+    Background jobs
+    Microservices vs monoliths
+    Performance tuning
+    Security hardening
+Outcome: You understand why systems are built the way they are.
+
+
+
+
+Month 5–6 — Portfolio + Mastery
+You build 2–3 real backend projects:
+    Auth service
+    Inventory system
+    Hospital management API
+    E‑commerce backend
+    Logging dashboard
+    Task manager with roles
+You document everything.
+You deploy everything.
+You test everything.
+Outcome: You’re employable, confident, and fully proficient.
