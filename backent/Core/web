@@ -1,0 +1,23 @@
+How the Web Works 
+
+.aspects to web Development 
+    .customer - simple, pleasing, and solve real user problem
+    .business - stay aligned with its product/market fit 
+    .engineering - reliable, scalable, and capable of handling high traffic
+
+
+Web App Architecture
+.web app 
+    .program running in browser
+    .xtics:
+        .addresses a particular problem 
+        .interactive
+        .works with Content Management System 
+
+.the architecture is the framework connecting the parts of an app
+    .user interface
+    .middleware systems
+    .databases 
+    .servers 
+    .browser 
+
