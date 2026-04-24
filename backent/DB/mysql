@@ -3,3 +3,24 @@ MySQL
 DB
 .digital system to store, organize, and manage data efficiently 
 .helps users quickly access and handle large amounts of info in a structured way 
+
+    .online filing system that stores large volumes of data 
+    .allows users to add, update, delete, and retrieve information easily
+    .used in websites, apps, and enterprises for organized data mgt
+
+Need:
+.high demand in industry
+.open-source and free 
+.easy to learn - handles both small and large scale systems 
+.integration support - works well with other programming languages like PHP, Java, and Node.js
+.strong community support - extensive documentation and community resources which make learning easier 
+
+
+User Management 
+.encompasses the creation, modification, and deletion of user accounts 
+.controlling their access privileges to databases and objects within the MySQL server 
+    .create user
+    .delete user
+    .show user
+    .change user password 
+
