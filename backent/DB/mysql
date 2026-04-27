@@ -20,7 +20,34 @@ User Management
 .encompasses the creation, modification, and deletion of user accounts 
 .controlling their access privileges to databases and objects within the MySQL server 
     .create user
+        .creates new user accounts that can access MySQL DB server 
+        .allows DB admins to define login credentials and control who can connect to the DB 
     .delete user
     .show user
     .change user password 
 
+
+MySQL server control:
+    .helps manage DB services 
+    .controls server availability
+    .supports maintenance and troubleshooting 
+
+Connecting to MySQL using CLI:
+Prerequisites:
+    .MySQL is running 
+    .correct username and password
+    .know the host (localhost) and port (3306)
+
+
+Working with DBs on the command line:
+.essential operations:
+    .DB management - create, select, modify, delete
+    .table management - create, alter, drop
+    .data manipulation - insert, update, delete, query 
+
+Core DB-level commands 
+    .create DB
+    .use - selects the activeDB for subsquent commands
+    .alter DB - modifies DB attributes 
+    .drop DB - deletes DB entirely 
+    
