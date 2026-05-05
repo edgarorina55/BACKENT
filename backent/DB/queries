@@ -26,6 +26,9 @@ Statements
 .inserts a string within a string, removing a # of characters from the original string 
 .accepts 4 parameters:
     INSERT(str, pos,  len, newstr)
+.its a string function, not a data-insertion command
+.used inside a query 
+
 
 
 4. Update 
@@ -34,4 +37,9 @@ Statements
 .makes permanent changes 
 .always used with SET clause to assign new values 
 
+
+5. Delete
+.removes one or more existing records from a table 
+.manages and cleans data by deleting unwanted rows 
+.changes made are permanent 
 
