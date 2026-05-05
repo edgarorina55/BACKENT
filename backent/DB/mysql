@@ -64,11 +64,11 @@ Managing DBs
         mysql -u root -p
 
 
->>mynotes:
-.I have learnt to:
-    .open mysql and run it using CLI
-    .create DB and tables, and insert values into them
-    .use the select prompt when working on tables 
+            >>mynotes:
+            .I have learnt to:
+                .open mysql and run it using CLI
+                .create DB and tables, and insert values into them
+                .use the select prompt when working on tables 
 
 
 

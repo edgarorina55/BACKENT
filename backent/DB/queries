@@ -1,0 +1,15 @@
+Statements 
+
+1. Select
+.retrieves data from tables in a DB
+.helps fetch specific columns and filtering data based on conditions 
+.supports clauses like WHERE, GROUP BY, ORDER BY for filtering, grouping, and sorting data 
+.supports aggregate functions to perform data analysis and summarization 
+
+            SELECT: Specifies columns to retrieve (* for all columns).
+            FROM: Specifies the table name.
+            WHERE: Filters rows based on conditions.
+            ORDER BY: Sorts results in ASC or DESC order.
+            LIMIT: Restricts the number of rows returned.
+
+
