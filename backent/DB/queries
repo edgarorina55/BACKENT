@@ -13,3 +13,25 @@ Statements
             LIMIT: Restricts the number of rows returned.
 
 
+2. select DISTINCT 
+.retrieves unique values from one or more columns in a table 
+.removes duplicates and returns only distinct results 
+.helps eliminate duplicate data 
+.useful for data analysis and filtering unique entries 
+>> can slow down mysql due to more working doing comparisons 
+    .multiple NULL values are considered duplicates 
+
+
+3. Insert 
+.inserts a string within a string, removing a # of characters from the original string 
+.accepts 4 parameters:
+    INSERT(str, pos,  len, newstr)
+
+
+4. Update 
+.modifies the existing records in a table and update columns as needed 
+.helps correcting errors and keeping data accurate 
+.makes permanent changes 
+.always used with SET clause to assign new values 
+
+
