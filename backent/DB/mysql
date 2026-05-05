@@ -57,3 +57,16 @@ Managing DBs
 .allows user to create, modify, and interact with data efficiently 
 .allows creation of new DB to store and manage data 
 .supports optional settings like character set and collation to control how text data is stored and compared 
+
+
+
+** Logging into mysql from the CLI
+        mysql -u root -p
+
+
+>>mynotes:
+.I have learnt to:
+    .open mysql and run it using CLI
+    .create DB and tables, and insert values into them
+    .use the select prompt when working on tables 
+    
