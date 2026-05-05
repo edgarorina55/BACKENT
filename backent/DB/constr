@@ -1,0 +1,23 @@
+1. Primary Key
+.unique column/field in a table 
+.should not contain a duplicate or NULL value 
+.identifies each record in a table uniquely 
+.helps establish relationships between different tables 
+.maintains the integrity of DB by preventing duplicate and null values in the key column 
+.can only be one in a table but can be defined on one or more fields - composite primary key 
+.can use the AUTO_INCREMENT attribute on this field to automatically add a new value to the column when 
+    a new row is created
+.makes query execution fast - mysql creates a primary index for the primary key 
+
+>>rules:
+    .each value must be unique 
+    .no NULL values 
+    .primary key value should remain constant throughout the lifespan of the record 
+    .should either be system-generated e.g auto-incremented integers OR 
+        natural keys e.g existing data that uniquely identifies a record 
+
+>creating PK
+.either:
+    .create table statement 
+    .alter table statement 
+.drop PK using alter table statement 
