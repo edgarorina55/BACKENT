@@ -69,4 +69,85 @@ Managing DBs
     .open mysql and run it using CLI
     .create DB and tables, and insert values into them
     .use the select prompt when working on tables 
-    
+
+
+
+Queries 
+.heart of interacting with DBs
+.act as instructions for:
+    .retrieving specific data 
+    .filtering results 
+    .performing calculations 
+
+
+Clauses 
+.building blocks of powerful queries 
+.act as instructions within a statement, specifying actions like:
+    .filtering data 
+    .sorting results 
+    .grouping information 
+
+
+Operators 
+.building blocks for manipulating data within queries 
+.allow for precise control of how data is filtered, transformed, and retrieved 
+.perform functions like:
+    .comparisons 
+    .logical operations 
+    .arithmetic calculations 
+.essential for crafting effective and efficient queries 
+
+
+
+Aggregate functions 
+.condense large datasets into single, meaningful values 
+.perform calculations like:
+    .finding the average salary
+    .counting the number of customers
+    .identifying the highest product price 
+
+
+
+Data constraints 
+.keep data accurate by setting rules for can be stored 
+.prevent invalid entries like:
+    .missing values
+    .duplicates 
+.ensure reliable data 
+
+
+Joining data 
+.combine data from multiple tables 
+.merge rows based on matching values, letting me see connections and gain insights I wouldn't get from separate tables 
+
+
+Functions 
+.powerful tools to manipulate and analyze data 
+.perform various tasks:
+    .mathematical calculations 
+    .string manipulations
+    .data and time operations
+    .data aggregation 
+.leverage them to efficiently transform and analyze data and extract valuable insights 
+
+
+Views
+.act like virtual tables, simplifying complex queries 
+>more like pre-written queries I can reference easily 
+.make my DB interactions more efficient 
+
+
+Indexes 
+.helpful tools for speeding up data searches 
+    >help retrieve specific information quickly 
+
+
+Triggers 
+.mini-programs that run automatically in response to specific events like:
+    .data insertion 
+    .updates 
+    .deletion 
+.they enforce data integrity, maintain logs, or even perform calculations 
+>my DB silent guardians 
+
+
