@@ -22,3 +22,19 @@
     .alter table statement 
 .drop PK using alter table statement 
 
+
+
+
+2. Foreign Key 
+.field/column in a table which refers to a PK in another table 
+.also called referencing key 
+    >it creates a link/relation between two tables thus creating referential integrity 
+.it creates a relationship between the columns in the current table (one with FK) and the referenced table 
+    (one with PK)
+.creates a parent-child type of relationship where:
+    .the table with the FK in the child table refers to the primary/unique key column in the parent table 
+
+>creating FK 
+    .create table 
+    .alter table 
+
