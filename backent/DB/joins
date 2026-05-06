@@ -1,0 +1,18 @@
+JOIN/S
+
+.feature that combines rows from two or more tables based on a related column between them
+.allows for efficient data retrieval by enabling the extraction of related information from multiple tables in a  single query 
+.help maintain referential integrity by ensuring that relationships between tables are respected and data 
+    consistency is preserved 
+.help efficiently manage and organize data 
+    .by allowing the use of normalized DB structures - where data is split into different tables to reduce redundancy 
+.used in conjunction with GROUP BY and aggregation functions to perform comprehensive data analysis 
+
+>>syntax
+        SELECT column_names - identifies the columns to get from the tables; can be from both tables 
+        FROM table1 - specifies the first table to begin joining from 
+        INNER JOIN table2 - identifies we want to join both tables 
+        ON table1.common_column = table2.common_column - specifies the condition on which the join is based 
+
+
+
