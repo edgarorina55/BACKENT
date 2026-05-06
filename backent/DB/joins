@@ -16,3 +16,36 @@ JOIN/S
 
 
 
+
+Types of Joins 
+
+Inner Join 
+.returns records that have matching values in both tables 
+
+Left join 
+.returns all records from the left table and matched records from the right table 
+    .if there's no match, NULL values are returned for right table columns 
+
+
+Right join 
+.returns all the rows from the right table and the matched rows from the left table 
+    NULL values will be returned for columns from the left table when there are no matches 
+
+
+Full join 
+.returns all records when there is a match in either the left or right table 
+    .if no match, NULL values are returned for columns that have no match in either table 
+>> its a left-join result set combined with a right-join result set to retrieve all employee/department names - for the sample tables I used 
+
+
+Cross Join 
+.returns the Cartesian product of two tables 
+    .matches every row of one table with every row of another table - all possible combinations between the employees and departments rows 
+
+
+
+Self Join 
+.a table is joined to itself 
+.useful when there's need to compare rows with the same table
+    e.g relating employees to their managers in an organizational hierarchy
+
