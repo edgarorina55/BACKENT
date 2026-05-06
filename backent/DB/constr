@@ -38,3 +38,23 @@
     .create table 
     .alter table 
 
+>> child table - table where the FK is defined 
+   child id - PK column of the child table 
+   parent id - FK column in the child table that refers to the PK in the parent table 
+
+        create table FK (
+    -> user_id int primary key,
+    -> username varchar(20),
+    -> email varchar(30) unique not null
+    -> );
+
+    create table FK2 (
+    -> order_id int primary key,
+    -> user_id int,
+    -> order_date date,
+    -> total_amount decimal(10, 2),
+    -> foreign key (user_id) references FK(user_id)
+    -> );
+
+
+
