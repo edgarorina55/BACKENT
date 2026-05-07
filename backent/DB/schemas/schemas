@@ -1,0 +1,20 @@
+Schemas
+
+.blueprint of my DB 
+.defines:
+    .what tables exist
+    .what columns exist in each table
+    .what data types each column has
+    .what relationships exist between tables
+    .what constraints exist on the data (e.g. primary keys, foreign keys, unique constraints, etc.)
+.its the foundation for designing and implementing a database
+
+
+How schema connects to the rest of the system:
+.user belongs to many conversations
+.conversation can have many users
+.message belongs to a conversation
+.conversation has many messages
+.user has many messages through conversations
+
+
