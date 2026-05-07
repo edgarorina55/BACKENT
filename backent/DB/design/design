@@ -1,0 +1,44 @@
+Designing DB
+
+.its creating a detailed data model of a DB
+.involves defining structure, storage, and retrieval mechanisms of the data 
+    .to ensure it meets the needs of the users and applications that will interact with it 
+.well-designed DB allows for efficient data mgt, retrieval, and storage, ensuring data integrity and security 
+
+
+Need 
+.efficiency - efficient storage, fast retrieval, enhanced overall performance 
+.scalability - easier to scale as the data grows/ change in application requirements 
+.data integrity - data remains accurate and consistent throughout its lifecycle 
+.maintenance - simplified maintenance tasks like updates, backups, thus reducing risk of errors and downtime 
+
+
+Process
+.Requirements and analysis 
+    .gather requirements - from stakeholders 
+        .know what data, how it will be used, and any constraints 
+    .identifying entities and relationships 
+        .are objects/concepts to be stored & their interactions e.g customer placing an order 
+
+.Conceptual design 
+    .entity-relationship diagrams (ERD)
+        .visual representations of entities and relationships within the DB
+        .help organize and clarify the structure of the DB in a clear manner
+    .identifying attributes 
+        .are specific pieces of information that need to be stored about each entity e.g customer name 
+    .defining relationships 
+        .specify how entities are related to each other e.g one-to-one, one-to-many
+        .specify any constraints 
+
+Logical design 
+    .converting ERD to tables 
+        .ERD is translated into a set of tables 
+        .each entity becomes a table, and each attribute becomes a column within that table 
+    .normalization 
+        .its organizing data to minimize redundancy and improve data integrity 
+        .normal forms:
+            .1NF: first normal form 
+                .ensures that each column contains atomic (indivisible) values and that each column contains only one type of data 
+            .2NF: second normal form 
+                .build on 1NF by ensuring all non-key attributes are fully functionally dependent on the primary key
+                
