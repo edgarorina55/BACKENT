@@ -82,3 +82,23 @@ Logical design
         .regularly update and maintain the DB to ensure its continued performance and security, including backups and updates 
 
         
+
+
+
+
+
+.Security and integrity
+    .data integrity constraints
+        .implement constraints like primary key to maintain data integrity 
+    .user access control 
+        .control who can access and modify data by setting up user roles and permissions
+    .encryption and backup 
+        .encrypt sensitive data to protect it from unauthorized access and regularly back up your DB to prevent data loss 
+
+
+.Best practices 
+    .avoiding redundancy - ensure that each piece of data is stored only once to avoid inconsistencies and wasted storage 
+    .ensuring scalability - design DB with future growth in mind 
+    .regulary review and update the design - to address changing requirements and improve performance 
+
+
