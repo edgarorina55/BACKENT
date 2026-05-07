@@ -1,0 +1,17 @@
+Pandas
+
+.python data analysis
+.open source library for data manipulation and analysis 
+    .efficiently manages large datasets - offers tools for data cleaning, transformation, and analysis
+    .integrates with NumPy, Matplotlib, and Scikit-learn
+    .revolves around 1D and 2D data structures
+        .series 
+        .dataframes 
+
+Uses:
+    .reading and writing data from various file formats like CSV, Excel, SQL DBs
+    .cleaning and preparing data - handling missing values, filtering, removing duplicates 
+    .merging, joining, and reshaping datasets
+    .performing statistical analysis and descriptive statistics 
+    .visualizing data quickly 
+
