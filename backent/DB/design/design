@@ -41,4 +41,44 @@ Logical design
                 .ensures that each column contains atomic (indivisible) values and that each column contains only one type of data 
             .2NF: second normal form 
                 .build on 1NF by ensuring all non-key attributes are fully functionally dependent on the primary key
-                
+            .3NF: third normal form 
+                .ensures all attributes are functionally dependent only on the primary key, removing any transitive dependencies 
+            .BCNF: boyce-codd normal form 
+                .stricter version of the 3NF where every determinant is a candidate key, ensures higher normalization
+    .integrity constraints 
+        .ensure data accuracy and consistency 
+            e.g primary and foreign keys, unique constraints, and check constraints 
+
+
+.Physical Design 
+    .choosing storage engines 
+        .different engines different features such as transaction support and locking mechanisms e.g InnoDB for mysql
+    .indexing 
+        .proper indexing is crucial for performance optimization - provide quick access paths to data
+    .partitioning 
+        .divides a large table into smaller, more manageable pieces, which can improve performance and manageability
+    .optimizing performance
+        .involves fine-tuning the DB design, queries, and hardware to ensure efficient operation
+
+
+.Testing and evaluation 
+    .perform testing 
+        .conduct tests to ensure DB functions correctly, including unit tests, integration tests, and performance tests 
+    .evaluate performance 
+        .analyze the DB performance and make necessary adjustments to optimize speed and efficiency 
+
+
+.Deployment 
+    .deploy DB
+        .move DB to a production environment where it will be accessible to end-users 
+    .train users
+        .provide training and documentation for users to effectively interact with the DB
+
+
+.Maintenance and monitoring 
+    .monitor performance 
+        .continuously monitor performance to identify and resolve issues promptly
+    .perform maintenance
+        .regularly update and maintain the DB to ensure its continued performance and security, including backups and updates 
+
+        
