@@ -1,3 +1,38 @@
 Query Optimization Basics
 
-.
+.Poorly written queries:
+    .make DB slow
+    .use too many resources
+    .cause locking problems
+    .give users bad experience 
+
+
+
+.Best Practices:
+
+1. Use indexes wisely 
+    .indexes help DB find data faster 
+        .primary index - automatically created on the primary key; keeps values unique and fast to access
+        .secondary index - created manually on non-primary key columns to improve query performance
+        .clustered index - determines the arrangement of data in a table
+                    .in some tables, primary key is automatically indexed 
+        .non-clustered index - contains pointers to the data 
+                    .multiple exist per table 
+
+        
+    Indexing guidelines:
+        .index columns used often in WHERE, JOIN, or ORDER BY clauses 
+        .avoid too many indexes - they slow down INSERT, UPDATE, and DELETE
+        .check and monitor index usage regularly to keep queries fast 
+
+
+2. Avoid select *: Choose only required columns
+    .makes queries slow, esp for large tables or when joining multiple tables 
+    .avoiding will:
+        .use less memory and run faster
+        .let DB skip unneeded columns 
+        .make queries simpler and easier to read 
+
+
+3. Limit rows with where and limit 
+    .
