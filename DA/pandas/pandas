@@ -23,7 +23,14 @@ DataFrame
     .size-mutable 
     .potentially heterogeneous tabular data structure with labeled axes 
 
+    
+    Index 
+    .reps the labels assigned to each row 
+    .helps identify and access data efficiently 
+    .can be either default numeric values or custom-defined labels 
 
+    > .index attribute 
+        .shows the existing index label 
 
 
 
@@ -36,7 +43,9 @@ CSV
 .allow storage of tabular data 
 .Pandas retrieves data in the form of data frame 
 
-    .reading csv files into Pandas DataFrame  
+
+
+1. reading CSV files into Pandas DataFrame  
         .read_csv() function 
 
             pd.read_csv(filepath_or_buffer, sep=',', header='infer',
@@ -56,3 +65,11 @@ CSV
             .skiprows - skips passed rows in the new dataframe 
                         .skips unnecessary rows at the satrt of a file; useful for ignoring metadata or extra headers that aren't part of the dataset 
             .na_values - replaces specified strings ('N/A', 'unknown') with NaN, enabling consistent handling of missing or incomplete data during analysis 
+
+
+2. saving DataFrame as CSV 
+    .allows us to export processed data into a structured file format for storage and sharing 
+    .helps preserve analysis results so the data can be reused across different tools and workflows 
+    
+    .set the index = False if we don't want the row numbers of the DataFrame 
+
