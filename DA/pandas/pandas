@@ -39,8 +39,20 @@ CSV
     .reading csv files into Pandas DataFrame  
         .read_csv() function 
 
-            pd.read_csv(filepath_or_buffer, sep=',' ,header='infer',
+            pd.read_csv(filepath_or_buffer, sep=',', header='infer',
                 index_col=None, usecols=None, engine=None,
                 skiprows=None, nrows=None)
 
-
+        where:
+            .filepath_or_buffer - location of the file 
+            .sep - separator (, is the default)
+            .header - accepts int, a list of int, row numbers to use as the column names and the start of the data 
+                        .if no names are passed, it will display the first column as 0, then ...
+            .usecols - retrieves only the selected columns from the CSV file 
+            .nrows - numver of rows to be displayed from the dataset 
+                        .limits the number of rows read from a file 
+            .index_col - if set to None, Pandas automatically assigns a default integer index to the dataset 
+                        .sets one or more columns as the DataFrame index, making it/them act as row labels for easier data referencing 
+            .skiprows - skips passed rows in the new dataframe 
+                        .skips unnecessary rows at the satrt of a file; useful for ignoring metadata or extra headers that aren't part of the dataset 
+            .na_values - replaces specified strings ('N/A', 'unknown') with NaN, enabling consistent handling of missing or incomplete data during analysis 
