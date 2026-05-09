@@ -80,4 +80,36 @@ Examples of D.M.
     .DB upgrade - to increase scalability >> MySQL to PostgreSQL
     .cloud migration - transferring on-premises data to AWS for greater accessibility and scalability
     .application migration - transferring client information from an outdated CRM system to a new one 
+
+
+
+
+
+Data Migration 
+    .transfer of data from one system to another
+    .move data to a new system or location 
+    .entire datasets or specific subsets 
+    .typically a one-time event
+    .migrating data to a new CRM system 
+
+Data Integration
+    .combining data from different sources into a unified view
+    .provide a unified view of data from diverse sources
+    .ongoing, real-time, or batch processes 
+    .continuous or scheduled 
+    .integrating customer data from CRM and ERP systems 
+
+Data Conversion
+    .changing data from one format to another 
+    .convert data to a different format or structure 
+    .specific data elements or entire datasets 
+    .typically a one-time event 
+    .converting legacy DB records to a new format 
+
+Criteria/Aspect:
+    .definition
+    .objective 
+    .scope
+    .frequency
+    .examples 
     
