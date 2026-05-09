@@ -66,4 +66,43 @@ Web Development
         .deployment 
             .technologies - containerization/ virtualization/ serverless computing/ ci/cd 
             .testing - aws/ gcp/ ms azure/ digital ocean/ firebase/ ibm cloud 
+
+
+    .Server-side languages 
+        .JS/node.js
+        .PHP
+        .Python
+        .Java
+        .Golang
+        .C#
+
+
+
+    .DBs
+        .Relational/SQL 
+        .NoSQL - stores data in flexible, non-tabular format e.g document, key-value pairs, wide-columns, or graphs 
+
+
+
+    APIs and Data Exchange formats 
+        .APIs - communication agents 
+        .data formats
+            .JSON/ javascript object notation 
+            .XML/ extensible markup language 
+
+    
+
+    Version control and deployment 
+        .version control - tracks and manages changes in the codebase, essential for teamwork
+        .deployment - publishes the web application so its accessible online 
+        .automation - combines version control and deployment for reliability and efficiency 
+                .ensures smooth, organized, and maintainable development process 
+
+
+
+    Graphics 
+        .conveys important points better than text/ beautifies page 
+            .Canvas
+            .SVG - scalable vector graphics 
             
+
