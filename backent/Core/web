@@ -34,3 +34,36 @@ Web Development
     .browser renders and displays the webpage to the user using security mechanisms like HTTPS to protect data and prevent attacks
 
 
+    >>Front-end
+        .HTML - creates basic structure and content of web pages 
+        .CSS - styles the HTML content - Bootstrap/ Tailwind CSS
+            .version control system - Git
+        .JavaScript - makes the web page interactive - React/ Next/ Angular/ Vue/ jQuery frameworks 
+            .mobile frontend framework - react native/ flutter/ ionic
+            .VCS hosting - github/ gitlab/ bitbucket 
+
+    >>Back-end
+        .internet protocol 
+            .network - HTTP/ HTTPS/ REST/ web socket/ SMTP
+            .project manager - npm, yarn, pnpm, git, github
+        .scripting language - JS/ python/ java/ c#/ PHP
+            .frameworks - node/ spring boot/ django/ laravel/ express/ ruby on rails 
+        .DB 
+            .relational - mysql/ postgresql/MS sql server/ oracle/ SQL lite
+            .non relational - mongodb/ apache cassandra/ redis/ amazon dynamodb/ couch DB
+        .API development 
+            .API protocol - rest/ soap/ graphql/ json-rpc/ websockets
+        .security   
+            .api security - https/ cors/ ssl/tsl/ csp
+            .authentication - jwt/ oauth/ token auth/ saml/ open id
+        .performance 
+            .optimize DB - caching/ indexes/ batch operation
+            .code efficiency - lazy loading/ load balancer/ asynchronous i/o / microservices 
+        .testing 
+            .integration testing
+            .unit testing
+            .function testing 
+        .deployment 
+            .technologies - containerization/ virtualization/ serverless computing/ ci/cd 
+            .testing - aws/ gcp/ ms azure/ digital ocean/ firebase/ ibm cloud 
+            
