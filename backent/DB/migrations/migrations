@@ -1,3 +1,44 @@
 Migrations
 
 
+.process of moving data from one system to another 
+    .for system upgrades, system consolidation, cloud migration, or adoption of new technologies 
+.crucial process due to the changing volumes and complexity of data 
+.should be done without sacrificing data integrity 
+
+
+.Data migration plan
+    .describes the approach and procedures to be taken throughout the data migration process
+    .for a good strategy:
+        1. Assessment - analyze the quality, quantity, and dependencies of the data as it is currently
+        2. Define objectives - clearly state the aims and objectives of the data transfer, including any changes to 
+            the system, data consolidation, or technological migration
+        3. Data mapping - determine and record how the data pieces in the source and destination systems are mapped 
+        4. Data cleansing - clean and verify the data to guarantee correctness and consistency 
+        5. Select tools - select the right tools/techniques for loading, transforming, and extracting based on the 
+            kind of data and systems involved 
+        6. Testing - before the actual migration, carry out comprehensive testing to find and fix any possible 
+            problems 
+        7. Execution - carry out the migration strategy while keeping an eye on things to make sure everything goes 
+            well
+        8. Validation - verify the correctness and completeness of the transferred data 
+        9. Post-migration support - after the migration, provide assistance to resolve any potential problems 
+
+
+
+Types of D.M.
+    1. Storage migration 
+        .transferring data between various formats or storage systems, sometimes requiring hardware changes 
+    2. Data migration 
+        .between the various DBMS or versions 
+    3. Cloud migration 
+        .data transfer between multiple cloud providers or from on-premises systems to cloud-based platforms 
+    4. Application migration 
+        .moving data from one app to another 
+    5. Business process migration 
+        .modifying the underlying data structure as a component of a larger endeavor to reengineer b/s processes 
+    6. Platform migration 
+        .transferring data across several technological platforms, such as switching between operating systems 
+
+    
+
