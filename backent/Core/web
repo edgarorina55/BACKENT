@@ -21,3 +21,16 @@ Web App Architecture
     .servers 
     .browser 
 
+
+
+Web Development 
+    .the creation of an app that works over the internet 
+    .its building, creating, and maintaining websites 
+    .includes aspects like web design, web publishing, web programming, & DB management 
+>> user access website through web browser 
+    .browser sends HTTP request to the web server to fetch the required webpage 
+    .web server processes the request; may interact with DB to retrieve or store data 
+    .server sends response to browser containing the webpage resources after processing 
+    .browser renders and displays the webpage to the user using security mechanisms like HTTPS to protect data and prevent attacks
+
+
