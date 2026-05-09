@@ -5,7 +5,7 @@ Roadmap to Backend Development
 1. Core Backend Foundations
 Goal: Understand how servers work and how data flows.
     How the web works (HTTP, requests, responses, headers)
-    REST vs RPC vs GraphQL
+    REST vs RPC vs GraphQL, django  
     JSON, status codes, routing
     Environment variables and config files
     Error handling patterns
