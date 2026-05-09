@@ -34,5 +34,69 @@ Query Optimization Basics
         .make queries simpler and easier to read 
 
 
-3. Limit rows with where and limit 
+3. Limit rows with WHERE and LIMIT 
+    .too many rows make queries slow
+    .use WHERE to filter data, and LIMIT to get only the rows needed 
+    .benefits:
+        .makes queries faster 
+        .avoids overload - sends only the needed data 
+        .useful for testing and previewing results 
+
+    
+4. Write efficient WHERE clauses 
+    .using functions or calculations on columns can stop the DB from using indexes 
+        .don't use functions on columns 
+        .avoid calculations on columns 
+        .write conditions so indexes can be used efficiently 
+
+
+
+5. Use Joins smartly 
+    .join only the tables needed, and filter data before joining
+    .use INNER join instead of OUTER join if unmatched rows are not needed 
+    .benefits:
+        .faster join processing
+        .avoids unwanted Cartesian products 
+        .helps DB choose an efficient execution plan 
+
+
+6. Avoid N+1 query problems 
+    .N+1 happens when I run a query to get a list, then run extra queries for each item 
+        .instead, fetch related data in a single query using JOINS instead 
+    .benefits:
+        .fewer DB cells
+        .faster response time
+        .reduces load on DB 
+
+
+7. Use EXISTS instead of IN - for subqueries 
+    .when checking whether a specific record exists in a table 
+        .EXISTS stops searching ASAP finding the first matching record: IN processes all the results before making the comparison 
+    .benefits:
+        .less memory used for large subqueries 
+
+
+8. Avoid wildcards at the start of LIKE
+    .don't start a LIKE pattern with % because it disables index use and causes a full table scan 
+    .benefits:
+        .reduces scanning overhead
+        .keeps searches fast and index-friendly 
+
+
+9. Use query execution plan 
     .
+    .benefits:
+        .helps identify full table scans
+        .reveals if indexes are used 
+        .guides optimization decisions 
+
+
+10. Use UNION ALL instead of UNION 
+    .UNION removes duplicates - adds sorting overhead 
+    .UNION ALL if duplicates don't matter 
+    .benefits:
+        .avoids unnecessary sorting
+        .merges results faster
+        .better for large datasets 
+
+
