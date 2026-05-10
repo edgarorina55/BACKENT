@@ -1,0 +1,19 @@
+django
+
+    .simplifies web devt through reasonable components and built-in features like authentication, DB connectivity, and CRUD operations
+    following the DRY (dont repeat yourself) principle
+    .it follows the MVT (model-view-template) design pattern:
+        .model - reps the data you want to display, typically sourced from a DB
+        .view - handles incoming requests and returns the appropriate template and content based on the user's request 
+        .template - text-file that defines the structure of the web page and includes logic for displaying the data
+
+     
+     why it:
+        .built-in admin - ready to use admin interface to manage my website data easily
+        .security - built-in protect against common security threats like SQL injection, XSS, and CSRF
+        .reusability - it follows the Don't Repeat Yourself principle, encouraging reusable code components 
+        .scalable - Object Relational Mapping - easily interacts with my DB without writing SQL queries
+        .URL routing - clean and simple URL structure that maps URLs to views in my app
+        .templating engine - separate my HTML from Python code using Django's templating system, making dynamic content easy to manage 
+
+
