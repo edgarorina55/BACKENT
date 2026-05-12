@@ -1,0 +1,18 @@
+Clauses 
+
+.used to filter, sort, group, and limit data in SQL queries
+.building blocks of powerful DB queries
+    .act like instructions within a statement, specifying actions like filtering data, sorting results, & grouping info
+
+
+1. WHERE 
+    .filters records based on specific conditions 
+    .useful for retrieving or modifying only the required data from a table 
+    .used with SELECT, UPDATE, and DELETE statements 
+    .supports comparison operators 
+    .allows logical operators such as AND, OR, and NOT for combining multiple conditions
+    .hels working with specific data instead of entire tables, improving query efficiency and performance
+
+
+    2. 
+
