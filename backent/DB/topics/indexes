@@ -1,0 +1,65 @@
+Indexes 
+
+.data structure improving ops on a DB table 
+.improve query performance by organizing data efficiently 
+    .allowing faster searching and retrieving of records 
+    .allows location and access of rows in tables faster 
+.increase speed and efficiency of DBs 
+    .render a more responsive app through their strategic application 
+
+
+
+Types 
+1. Primary index 
+    .automatically created when a primary key is defined on the table 
+    .uniquely identifies each row in the table 
+        .ensures the values are both unique and not null 
+    .only one per table 
+
+
+2. Unique index 
+    .ensures that all values within a column are unique 
+    .can be multiple per table 
+    .handy in enforcing uniqueness on columns that are not the primary key
+
+
+
+3. Full-text index 
+    .used with columns storing large quantities of text 
+    .facilitates very fast recovery of data based on complicated text-based searches 
+    .comes with the MATCH and AGAINST clauses 
+    .useful in apps like search engines 
+
+
+4. Spatial index 
+    .applied to geographic data types and enable the effective mgt and querying of spatial data 
+    .useful in apps that involve mapping, location-based services, and geographic info systems 
+
+
+5. Composite index 
+    .that created on more than one column
+    .performance is aided in queries that filter on more than one column, and it takes the first place in the column used in the query 
+
+
+
+Operations:
+
+    .CREATE INDEX idx_column_name ON table_name(column_name);
+    .for composite index:
+        CREATE INDEX idx_composite ON table_name(column1, column2);
+    .for unique index:
+        CREATE UNIQUE INDEX idx_unique_column_name ON table_name(column_name);
+    .for full text index:
+        CREATE FULLTEXT INDEX idx_fulltext_column_name ON table_name(text_column_name);
+
+    .showing all existing indexes:
+        SHOW INDEX FROM table_name;
+
+    .dropping an index 
+        DROP INDEX idx_column_name ON table_name;
+
+    
+    .understanding how SQL is executing the indexes 
+        EXPLAIN SELECT * FROM table_name WHERE column_name = 'value';
+
+        
