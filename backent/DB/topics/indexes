@@ -63,3 +63,6 @@ Operations:
         EXPLAIN SELECT * FROM table_name WHERE column_name = 'value';
 
         
+    .rebuilding indexes due to fragmentation over time; helps retain optimal performance 
+        OPTIMIZE TABLE table_name;
+        
