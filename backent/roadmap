@@ -15,6 +15,7 @@ Milestone: You can explain what happens when a client hits an endpoint.
 
 2. Your Primary Backend Stack
 You’ve already chosen Node.js + Express, which is perfect.
+    .I will focus on Django + PostgreSQL 
 Learn deeply:
     Express routing
     Middleware
