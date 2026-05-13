@@ -14,5 +14,41 @@ Clauses
     .hels working with specific data instead of entire tables, improving query efficiency and performance
 
 
-    2. 
+
+2. HAVING 
+    .filters grouped data based on aggregate conditions 
+    .used for applying conditions on results of GROUP BY clause 
+    .allows conditions on aggregated values like COUNT, SUM, AVG, MAX, MIN
+    .works similarly to WHERE but is applied after grouping data
+
+
+3. ORDER BY
+    .sorts the result set in ascending (ASC) or descending (DESC) order
+    .can sort by one or more columns
+    .used to organize data in a specific order for better readability and analysis
+
+
+
+4. GROUP BY
+    .groups rows based on specified columns
+    .used with aggregate functions to summarize data
+    .helps in generating summary reports and insights from data
+
+
+
+5. LIMIT
+    .restricts the number of rows returned by a query
+    .useful for pagination or when only a subset of data is needed
+    .can be used with an offset to specify the starting point of the result set
+
+
+
+6. PARTITION BY
+    .used in window functions to divide result set into partitions
+    .allows performing calculations across a set of rows related to the current row
+    .useful for ranking, running totals, and moving averages without collapsing rows into groups
+
+
+
+
 
