@@ -18,3 +18,18 @@ update - updates existing records in a table based on specified conditions
     .allows modification of stored data without deleting it 
 select* - fetches all columns and all records from a table without specifying individual column names
 
+
+
+
+
+
+Inspecting tables:
+    .describe table_name/ show columns from table_name 
+    .show create table table_name;
+        .returns the exact syntax used to create the table 
+    .show table status like 'table_name';
+        .shows table metadata 
+    .show index from table_name;
+        .inspecting indexes 
+
+    
