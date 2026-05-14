@@ -1,0 +1,12 @@
+Models 
+
+.model 
+    .Python class that represents a DB table 
+    .helps manage data easily using Python instead of writing MySQL
+    .ORM easens connecting Python code with DB
+    .helps create, update, and delete data easily 
+    .supports data checks and table relationships using fields like Foreign Key 
+
+
+
+Creating a Model
