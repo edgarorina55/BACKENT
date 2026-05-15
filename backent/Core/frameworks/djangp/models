@@ -10,4 +10,98 @@ Models
 
 
 Creating a Model
+.need project and app before defining any models
+    .models are then created after creating the app
 
+        from django.db import models
+
+        class GeeksModel(models.Model):
+            title = models.CharField(max_length=200)
+            description = models.TextField()
+            image = models.ImageField(upload_to='images/')
+
+            def __str__(self):
+            return self.title
+
+>>above defines a django model called GeeksModel with three fields:
+    .title - character field with 200-character limit 
+    .description - text field for longer input 
+    .image - imageField used to store the path or reference to an uploaded image file 
+    .__str__method - defined to return the title of the instance of the model when the model is printed 
+
+
+    .the model is converted into a DB table through the migration system, which tracks changes and applies them to 
+    the DB. 
+    .django maps the fields defined in the models into table fields of the DB 
+
+
+
+Applying migrations
+    python manage.py makemigrations 
+    python manage.py migrate
+        
+
+    .both commands must be executed whenever a model is CRUD in the models.py file 
+
+    .the migrations system generates and applies the necessary SQL commands to update the DB according to the changes in the models 
+        .makemigrations - creates migration files (Python code) that describe changes to the models 
+        .migrate - applies these migrations by executing the corresponding SQL commands on the DB
+
+
+
+Registering models in django admin 
+.open admin.py in app directory
+.register the model 
+        from django.contrib import admin 
+  
+        # Register your models here. 
+        from .models import GeeksModel 
+        
+        admin.site.register(GeeksModel)
+
+        .code doesn't produce any output; only registers the GeeksModel with the admin site so that it can be managed via the django admin interface 
+        .the admin panel can now CRUD model instances 
+
+    
+Model Field Types 
+.fields define the structure of DB tables 
+    .each field specifies:
+        .type of data it stores 
+        .constraints and validations on the data 
+            CharField: Stores short text (like names or titles)
+            TextField: Stores large amounts of text (like descriptions)
+            IntegerField: Stores integer values
+            BooleanField: Stores True/False values
+            DateTimeField: Stores date and time
+            ImageField/FileField: Stores images or files
+
+
+
+Relationship fields 
+.allow easy querying of related objects using django ORM and automatically handle DB constraints 
+.used when models are related to each other 
+    ForeignKey: Many-to-one relationship.
+    OneToOneField: One-to-one relationship.
+    ManyToManyField: Many-to-many relationship.
+
+
+
+Field options 
+.every field in models can have options(attributes) to control its behavior 
+.make django models highly flexible and ensure data integrity in the DB and forms 
+.they allow:
+    Set constraints (null, blank, unique)
+    Provide default values (default)
+    Customize display names (verbose_name)
+    Add help text for forms (help_text)
+    Apply validators to enforce custom rules
+
+
+
+CRUD operations on models  
+.ORM allows interaction with the DB using Python code instead of raw SQL
+    .create - add new records to the DB and save them 
+    .retrieve - query and fetch existing records easily
+    .update - modify existing records and save the changes 
+    .delete - remove records safely from the DB 
+    
