@@ -58,3 +58,27 @@
 
 
 
+
+3. NOT NULL
+.ensures that a column cannot store NULL values
+.helps maintain data accuracy and reliablilty by reinforcing mandatory values in specific columns 
+    .prevents NULL values from being inserted into a column
+    .ensures every row has a valid value for the column
+    .improves data accuracy and reliability
+
+
+
+
+4. Unique Constraint 
+.ensures that all values in a column/s are distinct from one another 
+.used to prevent duplicate entries in the column/s, maintaining data integrity 
+.can contain NULL values as long as the combination of values is unique 
+>>similar to the primary key but PK cannot contain null values 
+.can be multiple in a table 
+
+
+
+
+5. Composite Key
+.combination of two or more columns in a table that uniquely identifies each entry
+.its a candidate key made up of many columns 
