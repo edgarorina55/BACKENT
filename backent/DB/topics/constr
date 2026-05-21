@@ -82,3 +82,28 @@
 5. Composite Key
 .combination of two or more columns in a table that uniquely identifies each entry
 .its a candidate key made up of many columns 
+.MySQL guarantees column uniqueness only when they are concatenated 
+    .if extracted separately, the uniqueness cannot be maintained 
+.any key can be composite if it has more than one characteristic 
+.composite is important when the DB has to uniquely identify each record that contains more than one characteristic 
+.a composite key column may include a variety of data types
+    .thus, columns do not have to have the same data type to form a composite key in MySQL 
+
+
+    
+
+
+6. CHECK Constraint
+.it enforces a condition on the column/s of a table/ imposes conditions on what type of data to be inserted into a table 
+    .it makes sure that a specific type of data only gets inserted into the table 
+.it helps avoiding the entry of data that does not follow the specified conditions 
+
+
+
+7. DEFAULT Constraint
+.returns the default value for a table column
+    .default - that value used in the case, when there is no value specified by the user 
+        .default value must be compatible with the column's data type
+        .if a column is set to NOT NULL without a default value explicitly defined, and then try to insert a row without specifying 
+        a value for the column, it will show an error.
+        defining a default value can prevent such errors
