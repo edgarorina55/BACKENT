@@ -107,3 +107,4 @@
         .if a column is set to NOT NULL without a default value explicitly defined, and then try to insert a row without specifying 
         a value for the column, it will show an error.
         defining a default value can prevent such errors
+
