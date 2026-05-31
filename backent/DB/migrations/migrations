@@ -113,3 +113,31 @@ Criteria/Aspect:
     .frequency
     .examples 
     
+
+
+
+
+
+Notes 
+.Migration:
+    .versioned change to a DB structure
+    .is a DB evolution script 
+    .file that describes:
+            .what changed
+            .when it changed
+            .how to apply the change 
+            .how to undo the change 
+    .used to:
+        .add/remove columns
+        .add/remove tables
+        .change data types
+        .add constraints 
+        .add indexes
+        .rename tables or columns 
+    
+    .they exist because:
+            .DBs never stay the same 
+            .tables cannot be manually altered every time
+            .multiple developers work on the same DB
+            .need for a history of changes
+            .need to roll back if something breaks 
