@@ -1,35 +1,15 @@
-Notes
+Notes 
 
-query - commands to interact with DB tables and manipulate data
-
-show DBs - displays all DBs available on MySQL allowing users to view and verify existing DBs before any operations 
-select database() - confirms the database currently in use
-select now(); 
-    .returns the current date and time 
-    .useful for time-based operations
-    .commonly used in logging, auditing, and timestamp related queries
-    .reflects server time, not client system time 
-comments - include notes/explanations inside queries improving readability and maintainability of code
-auto_increment - automatically generates unique sequential values for a column, typically for primary keys in a table 
-    .ensures each record gets a unique identifier without manual input
-    .commonly used in ID columns to avoid duplication issues
-alter table - allows modification of table structure after creation
-update - updates existing records in a table based on specified conditions
-    .allows modification of stored data without deleting it 
-select* - fetches all columns and all records from a table without specifying individual column names
+SQL playbook - my DB bible 
+    .single, organized file to document all my SQL work 
+    .stores:
+        .every written quote
+        .what the queries document
+        .why I wrote them
+        .expected output
+        .notes about errors and fixes
+        .version history as the schema evolves 
 
 
-
-
-
-
-Inspecting tables:
-    .describe table_name/ show columns from table_name 
-    .show create table table_name;
-        .returns the exact syntax used to create the table 
-    .show table status like 'table_name';
-        .shows table metadata 
-    .show index from table_name;
-        .inspecting indexes 
 
     
