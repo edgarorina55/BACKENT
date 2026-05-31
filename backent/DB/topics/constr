@@ -1,110 +1,38 @@
-1. Primary Key
-.unique column/field in a table 
-.should not contain a duplicate or NULL value 
-.identifies each record in a table uniquely 
-.helps establish relationships between different tables 
-.maintains the integrity of DB by preventing duplicate and null values in the key column 
-.can only be one in a table but can be defined on one or more fields - composite primary key 
-.can use the AUTO_INCREMENT attribute on this field to automatically add a new value to the column when 
-    a new row is created
-.makes query execution fast - mysql creates a primary index for the primary key 
+Constraints and their real-life concepts 
 
->>rules:
-    .each value must be unique 
-    .no NULL values 
-    .primary key value should remain constant throughout the lifespan of the record 
-    .should either be system-generated e.g auto-incremented integers OR 
-        natural keys e.g existing data that uniquely identifies a record 
-
->creating PK
-.either:
-    .create table statement 
-    .alter table statement 
-.drop PK using alter table statement 
+.primary key - national ID/ SSN
+    .unique identifier 
+    .must be unique, and NOT NULL
+        i.e you must have one, and cannot be shared 
 
 
+.foreign key - apartment lease agreement requires a valid building 
+    .ensures records reference something that actually exists 
+    .prevents ghost data 
+
+.unique - only one person can have a specific apartment number  
+    .prevents duplicates that break logic
+
+.NOT NULL - mandatory information on a form
+    .the required field must have a value
 
 
-2. Foreign Key 
-.field/column in a table which refers to a PK in another table 
-.also called referencing key 
-    >it creates a link/relation between two tables thus creating referential integrity 
-.it creates a relationship between the columns in the current table (one with FK) and the referenced table 
-    (one with PK)
-.creates a parent-child type of relationship where:
-    .the table with the FK in the child table refers to the primary/unique key column in the parent table 
-
->creating FK 
-    .create table 
-    .alter table 
-
->> child table - table where the FK is defined 
-   child id - PK column of the child table 
-   parent id - FK column in the child table that refers to the PK in the parent table 
-
-        create table FK (
-    -> user_id int primary key,
-    -> username varchar(20),
-    -> email varchar(30) unique not null
-    -> );
-
-    create table FK2 (
-    -> order_id int primary key,
-    -> user_id int,
-    -> order_date date,
-    -> total_amount decimal(10, 2),
-    -> foreign key (user_id) references FK(user_id)
-    -> );
+.check - rules you must follow 
+    .enforces rules on the dataset 
 
 
+.default - if you dont choose, we choose for you 
+    .sets an automatic value when none is provided 
 
 
-3. NOT NULL
-.ensures that a column cannot store NULL values
-.helps maintain data accuracy and reliablilty by reinforcing mandatory values in specific columns 
-    .prevents NULL values from being inserted into a column
-    .ensures every row has a valid value for the column
-    .improves data accuracy and reliability
+.auto-increment - the queue number at DMV 
+    .automatically generates the next ID
 
 
+.index - a library catalog system 
+    .speed up searches 
 
 
-4. Unique Constraint 
-.ensures that all values in a column/s are distinct from one another 
-.used to prevent duplicate entries in the column/s, maintaining data integrity 
-.can contain NULL values as long as the combination of values is unique 
->>similar to the primary key but PK cannot contain null values 
-.can be multiple in a table 
-
-
-
-
-5. Composite Key
-.combination of two or more columns in a table that uniquely identifies each entry
-.its a candidate key made up of many columns 
-.MySQL guarantees column uniqueness only when they are concatenated 
-    .if extracted separately, the uniqueness cannot be maintained 
-.any key can be composite if it has more than one characteristic 
-.composite is important when the DB has to uniquely identify each record that contains more than one characteristic 
-.a composite key column may include a variety of data types
-    .thus, columns do not have to have the same data type to form a composite key in MySQL 
-
-
+.cascade - if the building is demolished, all leases end
+    .automatically updates or deletes related records 
     
-
-
-6. CHECK Constraint
-.it enforces a condition on the column/s of a table/ imposes conditions on what type of data to be inserted into a table 
-    .it makes sure that a specific type of data only gets inserted into the table 
-.it helps avoiding the entry of data that does not follow the specified conditions 
-
-
-
-7. DEFAULT Constraint
-.returns the default value for a table column
-    .default - that value used in the case, when there is no value specified by the user 
-        .default value must be compatible with the column's data type
-        .if a column is set to NOT NULL without a default value explicitly defined, and then try to insert a row without specifying 
-        a value for the column, it will show an error.
-        defining a default value can prevent such errors
-
