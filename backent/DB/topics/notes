@@ -11,5 +11,24 @@ SQL playbook - my DB bible
         .version history as the schema evolves 
 
 
+folder with files 
+    clinic_database_project/
+        │
+        ├── 00_schema.sql  - documents the tables, constraints, and relationships 
+        ├── 01_sample_data.sql  - documents all inserts used for testing 
+        ├── 02_queries_reference.sql  - (toolbox); contains every useful query 
+        ├── 03_debugging_notes.md   - documents all errors and fixes 
+        ├── 04_real_world_examples.sql   - documents real world SQL patterns I am learning 
+                        >> pagination, aggregations, joins, subqueries, stored procedures, views 
+        └── README.md   - project overview 
 
-    
+
+
+
+
+Documenting Powershell workflow 
+.I will create a Powershell execution log 
+    .transcript logging  - PS in-built recorder
+    .structured PS workflow notebook - markdown 
+    .version-controlled folder - github
+    .combined SQL + PS playbook - for full project documentation 
