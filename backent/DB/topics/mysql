@@ -88,3 +88,48 @@ NOtes
         .truncate - delete all rows from a table but keep the structure 
         .use - select which DB to run statements against 
         .call - execute a stored procedure 
+
+
+
+
+SQL fluency
+    .ability to think in data: 
+        .how data behaves
+        .how systems store it
+        .how to extract exactly what I want with precision and speed 
+
+    .schema fluency 
+        .understanding the shape of data 
+            .understand tables, columns, data types, primary keys, foreign keys, relationships 
+
+    .query fluency 
+        .retrieving data without thinking 
+            .core: select, where, order by, limit, group by, having, join
+
+    .analytical fluency 
+        .thinking in aggregations and patterns 
+            .summarize, compare, rank, detect trends, build reports 
+
+    .relational fluency 
+        .joining data like a pro 
+            .joining anything to anything 
+                .Joins
+                .many-to-many
+                .one-to-many
+
+    .operational fluency 
+        .modifying and maintaining data 
+            .insert, update, delete, alter table, create index, create view, create procedure, triggers 
+        .one can maintain a production DB safely 
+
+
+
+
+Building my fluency path
+.master the basic 
+.getting comfortable with relationships 
+.learning analytical SQL
+.learning schema evolution
+.learning advanced SQL
+.building a real project 
+        
