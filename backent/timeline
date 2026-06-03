@@ -69,3 +69,118 @@ You document everything.
 You deploy everything.
 You test everything.
 Outcome: You’re employable, confident, and fully proficient.
+
+
+
+
+
+
+Timeline 2
+
+Month 1 — Core Programming + Environment Setup
+Focus: Fundamentals + workflow
+    Python mastery (functions, modules, OOP, error handling)
+    Git + GitHub workflow
+    Linux basics (CLI, permissions, SSH)
+    Virtual environments, pip, Poetry
+    Build 2–3 small CLI tools
+Milestone: You can write clean, modular Python and manage your own dev environment
+
+
+
+Month 2 — Databases + SQL (Your strength gets sharpened)
+Focus: Real‑world SQL
+    MySQL/PostgreSQL setup
+    Joins, indexes, transactions
+    Query optimization
+    Database normalization
+    Django ORM mapping to SQL
+
+    Project:
+        Build a CRUD API backed by MySQL
+Schema design for a real domain (clinic, warehouse, inventory — fits your background)
+
+
+
+Month 3 — Django Deep Dive
+Focus: Framework mastery
+    Django project structure
+    Models, views, serializers
+    Authentication (JWT)
+    Permissions + RBAC
+    Middleware
+    File uploads
+    Pagination, filtering
+
+    Project:
+        Full authentication system
+Multi‑endpoint API with real business logic
+
+
+
+Month 4 — APIs + Architecture
+Focus: Thinking like a backend engineer
+    REST best practices
+    API versioning
+    Caching (Redis)
+    Rate limiting
+    Logging + monitoring
+    Testing (unit + integration)
+    
+    Project:
+        A production‑style API with caching + logging
+Load testing with Locust or k6
+
+
+
+Month 5 — DevOps Foundations
+Focus: Deployment + automation
+    Docker
+    Docker Compose
+    Nginx
+    Gunicorn/Uvicorn
+    CI/CD with GitHub Actions
+    Project:
+        Containerize your Django app
+        Deploy to AWS EC2
+        Automated CI/CD pipeline
+
+
+
+Month 6 — Cloud + Scaling
+Focus: Real production engineering
+    AWS RDS, S3, IAM
+    Load balancers
+    Horizontal scaling
+    Message queues (RabbitMQ, Kafka)
+    Event‑driven architecture
+
+    Project:
+        Microservice + API gateway
+        Background worker (Celery + Redis)
+        Scalable deployment on AWS
+
+
+
+Months 7–12 — Mastery Track
+Focus: Becoming senior‑level
+    Distributed systems
+    Advanced caching
+    Security hardening
+    Observability (Prometheus, Grafana)
+    High‑availability design
+    System design interview prep
+
+
+
+Capstone Project:  
+A fully deployed, scalable, secure backend system with:
+    Auth
+    Microservices
+    Queue processing
+    Caching
+    CI/CD
+    Monitoring
+    Cloud deployment
+
+    This becomes your portfolio centerpiece.
