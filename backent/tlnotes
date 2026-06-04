@@ -1,0 +1,68 @@
+CLI tools 
+
+    .program to be executed through a terminal using text commands 
+    .accepts arguments, flags, and subcommands
+        .performs operations
+            .returns structured output 
+
+    .foundational in: 
+        .backend engineering
+        .DevOps
+        .automation
+        .cloud infrastructure
+        .data engineering
+        .system administration
+
+    .preferred because they are:
+            .scriptable
+            .fast
+            .deterministic
+            .remote-friendly
+            .easy to integrate into pipelines
+
+    
+    Need for them:
+        .automation - deployments/ migrations/ backups/ API interactions/ data processing/ environment setup
+        .reproducibility - repeatable recipe - doing the same thing, on any machine
+        .integration - with CI/CD pipelines, cron jobs, shell scripts, Docker containers, remote servers 
+        .speed - eliminates UI overhead: perform complex task very fast
+        .precision - no ambiguity/ no clicking the wrong button/ no UI bugs
+
+
+
+    Composition
+    .entry point 
+        .the executable command
+    .subcommands 
+    .arguments 
+        .values passed to commands
+    .flags 
+        .optional modifiers 
+    .output 
+        .human-readable or machine-readable (JSON)
+
+
+
+How they are built:
+    .Python 
+        .using libraries like click, argparse, or typer 
+    .Node.js 
+        .commander/yargs
+    .go
+        .cobra - industry standard for cloud tools 
+    .rust 
+        .clap - high performance, safe 
+    .shell 
+        .bash scripts/ powershell scripts 
+
+
+
+
+Need for building CLI tool for development:
+    .controlling API from the terminal 
+    .automating development workflow 
+    .managing my database 
+    .deploying my project
+    .building a professional engineering toolkit 
+
+    
