@@ -1,0 +1,40 @@
+Virtual Environment 
+
+    .private workspace for Python project 
+    .allows package installation without affecting the whole computer 
+    .it contains:
+        .private Python interpreter
+        .private site-packages folder
+        .its own pip
+        .its own installed libraries
+        .activation strips 
+
+
+Without venv:
+    .installing Django for one project installs it for every project
+    .different projects might need different versions of the same package
+    .the system Python gets messy and breaks things
+    .deployments become unpredictable
+    .debugging becomes painful
+
+With it:
+    .each project has its own Django, its own Click, and own DB driver
+    .no version conflicts
+    .whole environment can be deleted safely
+    .reproducibility becomes easy
+
+
+Need for it:
+    .building Django apps
+    .creating CLI tools 
+    .installing Click
+    .using SQL drivers
+    .running multiple Python projects
+
+
+venv folder:
+    .Python interpreter
+    .pip
+    .site packages
+    .activation scripts
+
