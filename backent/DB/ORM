@@ -1,0 +1,22 @@
+Object-Relational Mapping
+
+    .it addresses the bridge between the OOP approach and relational databases
+    .useful in data interaction simplification, code optimization, and smooth blending of applications and databases 
+
+
+ORDBMS 
+    .enhances the functionalities of a relational database by incorporating object-oriented principles 
+    .deals with complex data types, encapsulation, and data types 
+    .supports applications that require both relational and object-oriented abilities 
+
+
+Entities
+    .synonymous with the objects or classes in object-oriented programming that are bound to the tables in 
+    relational DBs 
+    .serve as abstractions of business objects or the concepts within the application, and their definition is in the code
+        .ORM component carries out the transformation of these entities into DB tables
+        .it provides smooth communication between the application and the database beneath it 
+
+
+Relationships 
+    .
