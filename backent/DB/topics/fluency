@@ -1,0 +1,37 @@
+SQL fluency
+
+.thinking in data
+    .describe what data I want and how it relates; helps see patterns, build insights, and solve problems 
+        .don't tell the system how to
+
+    .SQL operates in sets, not steps
+        .don't loop through rows - define conditions and let DB engine find matches 
+        .don't manually calculate totals - use aggregations and let engine compute them
+        .don't manually combine data - define relationships and let joins do the work 
+
+.mental models to adopt for efficient use of SQL
+    tables = entities 
+    rows = facts 
+    columns = attributes/properties of the facts 
+
+.relationships drive insight 
+    .most insights come from combining tables 
+
+.filters define the slice you want 
+    .the WHERE clause is the scalpel
+
+.aggregation = summaries of reality 
+
+.grouping = patterns 
+
+
+
+
+In short:
+    .describe a table in plain language 
+    .ask a question that requires filtering
+    .ask a question that requires aggregation
+    .ask a question that requires grouping 
+    .ask a question that requires joining 
+
+    
