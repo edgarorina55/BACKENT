@@ -1,0 +1,36 @@
+Languages
+
+.system of responsibilities 
+
+
+
+
+.data definition language - structure - build the world 
+    .creates and shapes the structure of the database 
+        .CREATE, ALTER, DROP, CREATE INDEX 
+    .use when designing schemas, adding columns, or restructuring data models 
+
+
+.data manipulation language - day to day operations - work inside the world 
+    .inserts, updates, deletes, and retrieves data 
+        .SELECT, INSERT, UPDATE, DELETE 
+
+
+.data query language - reading data with precision - work inside the world 
+    .pure querying 
+        .SELECT 
+    .filtering, sorting, grouping, joining, and extracting insights 
+
+
+.data control language - who can do that - protect the world 
+    .permissions and security 
+        .GRANT, REVOKE 
+    .DBAs and engineers use it to manage access control 
+
+
+.transaction control language - safety and consistency - keep the world consistent 
+    .manage transactions and ensure data integrity 
+        .COMMIT, ROLLBACK, SAVEPOINT 
+    .critical in systems where data accuracy matters e.g healthcare, logistics, finance 
+
+ 
