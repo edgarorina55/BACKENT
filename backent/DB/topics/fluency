@@ -34,4 +34,41 @@ In short:
     .ask a question that requires grouping 
     .ask a question that requires joining 
 
+
+
+
+
+
+
+
+NOTES FOR A PROJECT:
+    EMPLOYEE MANAGEMENT AND PAYROLL SYSTEM
+
+
+    .real schema
+    .real data
+    .real queries
+    .real analytics 
+
+.project includes:
+        .normalized database schema
+        .multiple related tables
+        .constraints, indexes, and foreign keys
+        .realistic sample data 
+        .CRUD operations
+        .analytical queries
+        .joins, subqueries, CTEs, and window functions
+        .a mini-reporting layer 
+
+
+process:
+    .create database
+    .create tables 
+    .insert realistic sample data 
+    .core queries - CRUD and filtering 
+    .joins
+    .subqueries
+    .CTEs
+    .window functions
+    .real reporting queries 
     
