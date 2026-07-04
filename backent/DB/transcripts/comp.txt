@@ -1,6 +1,6 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20260704110758
+Start time: 20260704112018
 Username: LAPTOP-G1HKUK26\edgar
 RunAs User: LAPTOP-G1HKUK26\edgar
 Configuration Name: 
@@ -18,9 +18,73 @@ SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is C:\Users\edgar\BACKENT\backent\DB\transcripts\comp.txt
 PS C:\Users\edgar\BACKENT\backent\DB\transcripts> mysql -u root -p
+|    105 |
+|    106 |
+|    107 |
+|    108 |
+|    109 |
+|    110 |
+|    111 |
+|    112 |
+|    113 |
+|    114 |
+|    115 |
+|    116 |
+|    117 |
+|    118 |
+|    119 |
+|    120 |
+|    121 |
+|    122 |
+|    123 |
+|    124 |
+|    125 |
+|    126 |
+|    127 |
+|    128 |
+|    129 |
+|    130 |
+|    131 |
+|    132 |
+|    133 |
+|    134 |
+|    135 |
+|    136 |
+|    137 |
+|    138 |
+|    139 |
+|    140 |
+|    141 |
+|    142 |
+|    143 |
+|    144 |
+|    145 |
+|    146 |
+|    147 |
+|    148 |
+|    149 |
+|    150 |
+|    151 |
+|    152 |
+|    153 |
+|    154 |
+|    155 |
+|    156 |
+|    157 |
+|    158 |
+|    159 |
+|    160 |
++--------+
+150 rows in set (0.01 sec)
 
-PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript;
+mysql> Stop-Transcript
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version fo
+r the right syntax to use near '-Transcript' at line 1
+mysql> exit;
+Bye
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript
 **********************
 Windows PowerShell transcript end
-End time: 20260704111707
+End time: 20260704151312
 **********************
