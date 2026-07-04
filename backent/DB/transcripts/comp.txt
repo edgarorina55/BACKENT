@@ -1,0 +1,78 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260704183409
+Username: LAPTOP-G1HKUK26\edgar
+RunAs User: LAPTOP-G1HKUK26\edgar
+Configuration Name: 
+Machine: LAPTOP-G1HKUK26 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 50160
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\edgar\BACKENT\backent\DB\transcripts\comp.txt
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> mysql -u root -p
+| performance_schema |
+| practice           |
+| sys                |
++--------------------+
+6 rows in set (0.01 sec)
+
+mysql> CREATE DATABASE company_mgt
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE company_mgt
+Database changed
+mysql> CREATE TABLE departments (
+    -> dept_id INT PRIMARY KEY AUTO_INCREMENT,
+    -> dept_name VARCHAR(30)
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> CREATE TABLE employees (
+    -> emp_id INT PRIMARY KEY AUTO_INCREMENT,
+    -> first_name VARCHAR(30),
+    -> last_name VARCHAR(30),
+    -> email VARCHAR(30),
+    -> dept_id INT,
+    -> hire_date DATE,
+    -> salary DECIMAL(10, 2),
+    -> CONSTRAINT fk_dept FOREIGN KEY (dept_id)
+    ->          REFERENCES departments(dept_id)
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> CREATE TABLE attendance (
+    -> attendance_id INT PRIMARY KEY AUTO_INCREMENT,
+    -> emp_id INT,
+    -> work_date DATE,
+    -> hours_worked DECIMAL(10, 2),
+    -> status ENUM('Present', 'Absent'),
+    -> CONSTRAINT fk_emp_att FOREIGN KEY (emp_id)
+    ->          REFERENCES employees(emp_id)
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SELECT * FROM employees:
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version fo
+r the right syntax to use near ':' at line 1
+mysql> SELECT *
+    -> FROM employees
+    -> ;
+Empty set (0.00 sec)
+
+mysql> exit;
+Bye
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260704184525
+**********************
