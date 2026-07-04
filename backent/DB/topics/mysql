@@ -92,6 +92,24 @@ NOtes
 
 
 
+
+Common Table Expression (CTE) 
+    .temporary, named result set you can reference within a larger query 
+    .it makes complex queries easier to read, reuse, and maintain - especially when you're chaining multiple steps 
+    .behaves like a temporary table that exists only for the duration of the query 
+    .created using the WITH keyword 
+
+
+
+    Why use CTE
+        .cleaner logic for multi-step queries 
+        .reusable within the same query 
+        .great for recursive queries (hierarchies, org charts)
+        .easier debugging than nested subqueries 
+        
+
+
+
 SQL fluency
     .ability to think in data: 
         .how data behaves
