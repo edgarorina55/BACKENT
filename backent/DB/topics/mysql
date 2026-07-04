@@ -1,5 +1,14 @@
 NOtes 
 
+.Constraints 
+    .protect data from bad inserts and enforce business rules 
+
+
+.Indexes 
+    .make queries faster than when without 
+
+
+
 .Pagination
     .shows a slice of data instead of the whole table 
     .uses LIMIT and OFFSET to show data in pages 
@@ -41,6 +50,7 @@ NOtes
 
 .Functions
     .built-in tools that take input - process it - return a value 
+    .they let me package logic like backend functions 
     they:
         .calculate values
         .transform text
@@ -106,7 +116,7 @@ Common Table Expression (CTE)
         .reusable within the same query 
         .great for recursive queries (hierarchies, org charts)
         .easier debugging than nested subqueries 
-        
+
 
 
 
