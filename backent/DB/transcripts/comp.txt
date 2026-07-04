@@ -1,0 +1,79 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260704095901
+Username: LAPTOP-G1HKUK26\edgar
+RunAs User: LAPTOP-G1HKUK26\edgar
+Configuration Name: 
+Machine: LAPTOP-G1HKUK26 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 50160
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\edgar\BACKENT\backent\DB\transcripts\comp.txt
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> mysql -u root -p
++-----------------------+
+| attendance            |
+| departments           |
+| employees             |
+| payroll               |
++-----------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM departments;
++---------+-------------+
+| dept_id | dept_name   |
++---------+-------------+
+|       5 | engineering |
+|       2 | Finance     |
+|       3 | HR          |
+|       1 | IT          |
+|       6 | marketing   |
+|       4 | Operations  |
++---------+-------------+
+6 rows in set (0.00 sec)
+
+mysql> ALTER TABLE departments
+    -> CHANGE COLUMN engineering Engineering VARCHAR(40)
+    -> ;
+ERROR 1054 (42S22): Unknown column 'engineering' in 'departments'
+mysql> UPDATE departments
+    -> SET dept_name = 'Engineering'
+    -> WHERE dept_name = 'engineering'
+    -> ;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE departments
+    -> SET dept_name = 'Marketing'
+    -> WHERE dept_name = 'marketing'
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM departments;
++---------+-------------+
+| dept_id | dept_name   |
++---------+-------------+
+|       5 | Engineering |
+|       2 | Finance     |
+|       3 | HR          |
+|       1 | IT          |
+|       6 | Marketing   |
+|       4 | Operations  |
++---------+-------------+
+6 rows in set (0.00 sec)
+
+mysql> exit;
+Bye
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260704100539
+**********************
