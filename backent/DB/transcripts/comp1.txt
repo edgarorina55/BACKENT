@@ -1,6 +1,6 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20260704190304
+Start time: 20260704221002
 Username: LAPTOP-G1HKUK26\edgar
 RunAs User: LAPTOP-G1HKUK26\edgar
 Configuration Name: 
@@ -18,9 +18,73 @@ SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is C:\Users\edgar\BACKENT\backent\DB\transcripts\comp1.txt
 PS C:\Users\edgar\BACKENT\backent\DB\transcripts> mysql -u root -p
+|     16 | Paul       | Mitchell  | paul.mitchell@corp.com    |      10 | 2016-07-21 | 118000.00 |
+|     17 | Quinn      | Barnes    | quinn.barnes@corp.com     |      40 | 2018-01-29 |  74000.00 |
+|     18 | Rachel     | Simmons   | rachel.simmons@corp.com   |      30 | 2020-09-15 |  93000.00 |
+|     19 | Samuel     | Hayes     | samuel.hayes@corp.com     |      50 | 2017-12-08 |  72000.00 |
+|     20 | Tina       | Morgan    | tina.morgan@corp.com      |      20 | 2023-04-17 |  64000.00 |
+|     21 | Uma        | Patel     | uma.patel@corp.com        |      10 | 2019-10-05 | 110000.00 |
+|     22 | Victor     | James     | victor.james@corp.com     |      30 | 2018-06-14 |  97000.00 |
+|     23 | Wendy      | Scott     | wendy.scott@corp.com      |      40 | 2021-03-09 |  78000.00 |
+|     24 | Xavier     | King      | xavier.king@corp.com      |      50 | 2020-12-27 |  69000.00 |
+|     25 | Yara       | Bennett   | yara.bennett@corp.com     |      20 | 2022-02-11 |  66000.00 |
+|     26 | Zane       | Harper    | zane.harper@corp.com      |      10 | 2017-08-23 | 125000.00 |
+|     27 | Ava        | Morris    | ava.morris@corp.com       |      30 | 2019-05-16 |  91000.00 |
+|     28 | Blake      | Fisher    | blake.fisher@corp.com     |      40 | 2020-10-30 |  75000.00 |
+|     29 | Chloe      | Armstrong | chloe.armstrong@corp.com  |      50 | 2021-06-12 |  70000.00 |
+|     30 | Derek      | Walsh     | derek.walsh@corp.com      |      20 | 2018-03-03 |  68000.00 |
+|     31 | Ella       | Hansen    | ella.hansen@corp.com      |      10 | 2016-11-19 | 119000.00 |
+|     32 | Finn       | Douglas   | finn.douglas@corp.com     |      30 | 2020-01-25 |  94000.00 |
+|     33 | Gina       | Rhodes    | gina.rhodes@corp.com      |      40 | 2017-07-14 |  77000.00 |
+|     34 | Hector     | Mason     | hector.mason@corp.com     |      50 | 2022-09-02 |  71000.00 |
+|     35 | Ivy        | Carson    | ivy.carson@corp.com       |      20 | 2021-04-28 |  69000.00 |
+|     36 | Jason      | Ford      | jason.ford@corp.com       |      10 | 2015-12-17 | 123000.00 |
+|     37 | Kylie      | Shaw      | kylie.shaw@corp.com       |      30 | 2019-08-09 |  92000.00 |
+|     38 | Liam       | Barker    | liam.barker@corp.com      |      40 | 2020-05-22 |  76000.00 |
+|     39 | Megan      | Cross     | megan.cross@corp.com      |      50 | 2021-09-13 |  68000.00 |
+|     40 | Nathan     | Holt      | nathan.holt@corp.com      |      20 | 2018-02-07 |  67000.00 |
+|     41 | Olga       | Vega      | olga.vega@corp.com        |      10 | 2017-10-01 | 117000.00 |
+|     42 | Peter      | Lane      | peter.lane@corp.com       |      30 | 2020-11-18 |  96000.00 |
+|     43 | Queen      | Adams     | queen.adams@corp.com      |      40 | 2019-01-04 |  78000.00 |
+|     44 | Riley      | Shields   | riley.shields@corp.com    |      50 | 2022-03-15 |  70000.00 |
+|     45 | Sofia      | Greene    | sofia.greene@corp.com     |      20 | 2021-07-26 |  65000.00 |
+|     46 | Tom        | Bradley   | tom.bradley@corp.com      |      10 | 2016-06-08 | 122000.00 |
+|     47 | Ursula     | Pope      | ursula.pope@corp.com      |      30 | 2018-09-30 |  93000.00 |
+|     48 | Vince      | Rowe      | vince.rowe@corp.com       |      40 | 2020-04-12 |  77000.00 |
+|     49 | Whitney    | Sharp     | whitney.sharp@corp.com    |      50 | 2017-05-19 |  72000.00 |
+|     50 | Ximena     | Boyd      | ximena.boyd@corp.com      |      20 | 2023-01-11 |  68000.00 |
+|     51 | Yvonne     | Sears     | yvonne.sears@corp.com     |      10 | 2018-04-22 | 124000.00 |
+|     52 | Zack       | Merritt   | zack.merritt@corp.com     |      30 | 2019-09-17 |  94000.00 |
+|     53 | Aiden      | Lowry     | aiden.lowry@corp.com      |      40 | 2021-02-08 |  76000.00 |
+|     54 | Bella      | Chan      | bella.chan@corp.com       |      50 | 2020-12-03 |  69000.00 |
+|     55 | Carter     | Young     | carter.young@corp.com     |      20 | 2022-06-14 |  67000.00 |
+|     56 | Diana      | Fleming   | diana.fleming@corp.com    |      10 | 2017-03-29 | 118000.00 |
+|     57 | Ethan      | Griffin   | ethan.griffin@corp.com    |      30 | 2018-11-05 |  96000.00 |
+|     58 | Faith      | Holloway  | faith.holloway@corp.com   |      40 | 2020-07-21 |  78000.00 |
+|     59 | Gavin      | Irwin     | gavin.irwin@corp.com      |      50 | 2021-10-16 |  72000.00 |
+|     60 | Hannah     | Jefferson | hannah.jefferson@corp.com |      20 | 2019-05-12 |  65000.00 |
+|     61 | Ian        | Keller    | ian.keller@corp.com       |      10 | 2016-08-27 | 122000.00 |
+|     62 | Jenna      | Lloyd     | jenna.lloyd@corp.com      |      30 | 2020-03-19 |  93000.00 |
+|     63 | Kyle       | Matthews  | kyle.matthews@corp.com    |      40 | 2017-10-09 |  77000.00 |
+|     64 | Lara       | Nixon     | lara.nixon@corp.com       |      50 | 2022-04-02 |  70000.00 |
+|     65 | Miles      | Owens     | miles.owens@corp.com      |      20 | 2021-01-15 |  68000.00 |
+|     66 | Nina       | Parks     | nina.parks@corp.com       |      10 | 2018-09-23 | 119000.00 |
+|     67 | Owen       | Quincy    | owen.quincy@corp.com      |      30 | 2019-12-11 |  95000.00 |
+|     68 | Paige      | Reeves    | paige.reeves@corp.com     |      40 | 2020-08-28 |  76000.00 |
+|     69 | Quentin    | Sanders   | quentin.sanders@corp.com  |      50 | 2021-03-07 |  69000.00 |
+|     70 | Rosa       | Tanner    | rosa.tanner@corp.com      |      20 | 2022-10-18 |  66000.00 |
+|     71 | Sean       | Underwood | sean.underwood@corp.com   |      10 | 2017-06-04 | 125000.00 |
+|     72 | Tara       | Vaughn    | tara.vaughn@corp.com      |      30 | 2018-02-22 |  92000.00 |
+|     73 | Umar       | Whitman   | umar.whitman@corp.com     |      40 | 2020-05-30 |  78000.00 |
+|     74 | Vera       | Xu        | vera.xu@corp.com          |      50 | 2021-09-25 |  71000.00 |
+|     75 | Wes        | York      | wes.york@corp.com         |      20 | 2019-11-14 |  67000.00 |
++--------+------------+-----------+---------------------------+---------+------------+-----------+
+75 rows in set (0.00 sec)
 
+mysql> EXIT;
+Bye
 PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript
 **********************
 Windows PowerShell transcript end
-End time: 20260704190759
+End time: 20260704223915
 **********************
