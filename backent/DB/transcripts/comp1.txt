@@ -1,0 +1,26 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260704190304
+Username: LAPTOP-G1HKUK26\edgar
+RunAs User: LAPTOP-G1HKUK26\edgar
+Configuration Name: 
+Machine: LAPTOP-G1HKUK26 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 50160
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\edgar\BACKENT\backent\DB\transcripts\comp1.txt
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> mysql -u root -p
+
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260704190759
+**********************
