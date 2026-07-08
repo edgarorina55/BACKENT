@@ -1,0 +1,41 @@
+1. Authentication
+
+.verifying identity
+    .process of confirming a user is legit 
+
+
+Common Methods
+    .password-based loggin
+    .token-based loggin
+    .OAuth2  - Google, Github
+    .API keys - for services, machines
+    .multi-factor Authentication
+
+
+
+Critical Backend steps
+    .hash passwords 
+    .issuing credential after logging in 
+        .session cookie
+        .JWT
+        .opaque token
+    .store user identity
+
+
+
+2. Authorization - permissions
+    .deciding what the user can do after knowing them 
+
+
+    Authorization models
+        .role-based access control 
+            roles: admin, user, manager
+        .permission-based access control 
+            .fine-grained: can_edit_invoice, can_view_reports
+        .attribute-based access control 
+            .based on attributes: department, location, clearance
+
+
+    
+3. How it works in a real backend 
+    .
