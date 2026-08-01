@@ -141,3 +141,21 @@ Sessions vs JWTs
             .they are stateless, making them suitable for scalable and distributed applications without maintaining server-side sessions 
 
 
+    .when to use session vs JWT
+        .depends on app architecture, scalability requirements, and security levels
+
+        .traditional websites - SBA
+        .banking and financial apps - SBA
+        .content mgt systems - SBA
+        .enterprise intranet apps - SBA
+        .REST APIs - JWT
+        .single page apps - JWT
+        .mobile apps - JWT
+        .microservices architecture - JWT
+        .cross-domain authentication - JWT
+        .cloud-native and distributed apps - JWT 
+
+
+    
+
+    
