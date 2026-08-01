@@ -158,4 +158,49 @@ Sessions vs JWTs
 
     
 
-    
+Access token VS refresh token
+    .OAuth 2.0 and OpenID Connect use tokens instead of usernames and passwords to authenticate users and authorize access
+    .access and refresh are the most common tokens often implemented as JWTs
+        .access token - short-lived credential, that allows users to access protected resources without logging in repeatedly 
+        .used to authenticate API requests and access protected resources
+        .user authorizes the client, which receives an access token and uses it to access protected resources 
+        .server validates the token before granting access
+        .typical lifespan: 30 -90 minutes or a few hours 
+
+        .refresh tokens - long-lived tokens used to obtain a new access token after the current one expires, without requiring the user to login again 
+        .used to obtain a new access token after the current one expires without requiring the user to login again 
+        .typical lifespan: much longer than hours, 90 days up to 
+
+
+
+Tokens vs Cookies
+    .both used to manage user authentication, but differ on how they are stored, transmitted, and secured 
+
+    Token:
+        .used for authentication and authorization, especially in APIs
+        .sent manually in the authorization header
+        .typically stored in memory, local storage, or session storage 
+        .commonly interpreted as JWTs 
+        .more vulnerable to XSS if stored insecurely
+
+    Cookie:
+        .used primarily for session mgt in web mgt
+        .automatically sent by the browser with each request
+        .stored and managed by the browser
+        .can store session IDs or authentication tokens such as JWTs
+        .more vulnerable to CSRF unless protected with SameSite or CSRF tokens 
+
+
+
+JWT Validation 
+.ensures that a token is authentic, has not been tampered with, and is still valid 
+.JWT:
+    .header - contains metadata, such as the signing algorithm
+    .payload - contains claims, i.e user and token information
+    .signature - verifies the token's integrity using a secret or private key
+
+.during validation: 
+    .verify the signature to ensure the token has not been modified
+    .check the exp and nbf claims to confirm the token is valid
+    .optionally validate the issuer and audience claims for additional security 
+
