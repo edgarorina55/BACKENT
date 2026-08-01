@@ -194,13 +194,31 @@ Tokens vs Cookies
 
 JWT Validation 
 .ensures that a token is authentic, has not been tampered with, and is still valid 
-.JWT:
-    .header - contains metadata, such as the signing algorithm
-    .payload - contains claims, i.e user and token information
-    .signature - verifies the token's integrity using a secret or private key
+    .JWT:
+        .header - contains metadata, such as the signing algorithm
+        .payload - contains claims, i.e user and token information
+        .signature - verifies the token's integrity using a secret or private key
 
-.during validation: 
-    .verify the signature to ensure the token has not been modified
-    .check the exp and nbf claims to confirm the token is valid
-    .optionally validate the issuer and audience claims for additional security 
+    .during validation: 
+        .verify the signature to ensure the token has not been modified
+        .check the exp and nbf claims to confirm the token is valid
+        .optionally validate the issuer and audience claims for additional security 
+
+
+JWT Signing Algorithms 
+    .use signing algorithms to ensure their integrity and authenticity
+
+JWT signing keys
+    .used to create and verify token signatures 
+        .symmetric - uses the same secret key for signing and verification
+        .assymetric - uses a private key for signing and a public key for verification 
+            .more secure for distributed systems where multiple services need to verify tokens
+
+
+Refresh token security
+    .secure storage - store refresh tokens in HttpOnly cookies or other secure storage
+    .expiration - set an expiration time and invalidate expired refresh tokens
+    .token rotation - issue a new refresh token each time the old one is used and invalidate the previous one
+    .revocation - allow refresh tokens to be revoked e.g on user logout or account compromise
+    .concurrent use - restrict or monitor refresh token usage across multiple devices or sessions 
 
