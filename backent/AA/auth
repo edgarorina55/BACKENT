@@ -2,14 +2,20 @@
 
 .verifying identity
     .process of confirming a user is legit 
+    .process of confirming the identity of a user, device, or system by validating provided credentials 
+    before granting access to a network or its resources 
+    .prevents unauthorized usage of systems
+    .ensures secure interaction within a network environment
+    .maintains security, reliability, and trust within the system 
 
 
-Common Methods
+Common Methods - different techniques depending on the type of credentials used 
     .password-based loggin
     .token-based loggin
     .OAuth2  - Google, Github
     .API keys - for services, machines
     .multi-factor Authentication
+    .physical identification 
 
 
 
@@ -39,3 +45,55 @@ Critical Backend steps
     
 3. How it works in a real backend 
     .
+
+
+
+
+
+
+
+
+
+
+
+
+Authentication methods
+    .password-based 
+        .most common
+        .each user assigned a unique username and password 
+    
+    .physical identification 
+        .uses physical objects like ID, badges, tokens 
+        .common in restricted access areas 
+    .biometric 
+        .relies on unique biological or behavioral characteristics of individuals
+        .eliminates the need to remember passwords or carrying physical tokens 
+        .requires specialized hardware and accurate data capture 
+        .common techniques:
+            .facial recognition
+            .fingerprint recognition
+            .hand geometry
+            .retinal pattern recognition
+            .signature verification
+            .voice recognition
+
+
+
+Types of Authentication
+.classified based on the number or independent factors used to verify a user's identity 
+
+
+.Single-factor 
+    .relies on one form of verification 
+    .ease of access prioritized ahead of security 
+
+.2Factor 
+    .requires two different authentication factors to confirm identity
+    .typically combines something a user knows and what they have 
+    .common in email services, online banking, and enterprise systems
+
+.Multi-factor 
+    .requires two or more factors for identity verification
+    .designed for environments where data sensitivity and security are critical 
+    
+    
