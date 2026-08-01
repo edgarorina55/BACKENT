@@ -222,3 +222,43 @@ Refresh token security
     .revocation - allow refresh tokens to be revoked e.g on user logout or account compromise
     .concurrent use - restrict or monitor refresh token usage across multiple devices or sessions 
 
+
+
+
+Role-based access control  
+    .security framework used to restrict and manage user access to systems, applications, DBs, and network resources based on predefined job roles
+        .instead of assigning permissions to every individual user, organizations assign permissions to roles and users inherit access rights through those roles 
+            .supports security compliance and auditing req
+            .reduces unauthorized access and insider threats
+            .controls access to sensitive data, applications, and systems
+            .assigns permissions according to job responsibilities
+            .simplifies permission mgt in large organizations
+
+
+    Components
+        .users - individuals with accounts that access the system
+        .roles - represent job function within an organization
+        .permissions - define the actions a role is allowed to perform 
+        .role assignments - users are assigned roles depending on their responsibilities 
+
+
+
+    Working of RBAC
+    .define roles 
+    .assign permissions to role
+    .assign users to roles
+    .access control enforcement
+    .modify roles and permissions
+    .audit and monitor access
+
+
+
+
+    Limitations
+    .initial role setup is time-consuming
+    .complex organizations may require many roles
+    .poor role design can create permission overlap
+    .frequent organizational changes may require continuous updates 
+
+
+    
