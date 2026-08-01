@@ -95,5 +95,49 @@ Types of Authentication
 .Multi-factor 
     .requires two or more factors for identity verification
     .designed for environments where data sensitivity and security are critical 
+
     
-    
+
+
+
+
+
+
+
+Storing Passwords in DBs
+    .shows the need for storing passwords correctly in the event of DB getting compromised 
+
+
+#Hashing Passwords 
+
+    .storing plain text passwords in the DB is a sin 
+    .do not encrypt then store 
+    .hashing is a one-way cryptographic hash function 
+    .hash function provides a many-one mapping between input and output 
+        .its impossible to reverse an output 
+        . a good function has lesser number of collisions 
+            .collisions cannot be avoided due to the pigeonhole principle 
+                .talk about the Rainbow Table 
+    .salt
+        .random data thats concatenated with my password before sending it as the input of the hashing function 
+        .not stored in the DB; only present in the application configuration file which is not accessible to outer world 
+
+
+
+
+
+
+
+
+Sessions vs JWTs
+.common methods for verifying a user's identity and control access to applications 
+    .session-based authentication - stores user session data on the server and uses a session ID to identify authenticated users 
+        .unique session to each user after a successful login 
+        .server stores session data, client stores only a session ID(usually )
+    .JSON-web authentication - uses a signed token stored on the client, allowing users to authenticate wothout maintaining server-side sessions
+        .token-based authentication mechanism used to securely transmit user information between a client and server 
+        .contains header, payload, and signature, allowing the server to verify the token without storing session data 
+            .after a successful login, the server generates a JWT, which the client sends with future requests for authentication
+            .they are stateless, making them suitable for scalable and distributed applications without maintaining server-side sessions 
+
+
