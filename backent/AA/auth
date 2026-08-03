@@ -262,3 +262,37 @@ Role-based access control
 
 
     
+
+
+
+
+
+
+Open Authorization 
+    .open-standard authorization protocol  that allows applications to access user data without requiring the user's password
+    .it enables secure delegated access - login with facebook 
+        .prevents sharing passwords with third-party apps
+        .uses access tokens issued by an authorization server
+        .works over HTTP/HTTPS and supports web, mobile, and desktop apps 
+
+
+   Why its used 
+    .to avoid sharing passwords with every app
+    .to allow safe, controlled access to user data
+    .to enable convenient, single-click login and authorization
+    .to support modern applications across the web, mobile, and APIs
+
+
+Components of the OAuth Mechanism 
+
+.OAuth Provider - Authorization Server
+    .verifies the user's identity and issues access/refresh tokens
+    .stores and protects user accounts and data
+    .handles login(authentication) 
+    .asks the user for permission - consent screen
+    .issues tokens used by applications to access APIs
+        .e.g google, fb, github
+
+OAuth Client - third party application
+    .requests 
+
