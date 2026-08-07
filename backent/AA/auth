@@ -294,5 +294,24 @@ Components of the OAuth Mechanism
         .e.g google, fb, github
 
 OAuth Client - third party application
-    .requests 
+    .requests access to the users data from the provider
+    .redirects the user to the provider for the login
+    .never sees the user's password
+    .
 
+
+
+
+Resource Owner - User
+    .the individual who owns the data and grants permission to share it 
+        .approves or denies access through the consent screen
+        .controls what information  the client  can access
+        .can revoke permissions anytime from account settings
+        .does not share their password with the OAuth Client
+
+
+
+
+
+How 
+this is how you know people have started going mad for real bro
