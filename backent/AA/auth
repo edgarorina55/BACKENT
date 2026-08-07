@@ -314,4 +314,45 @@ Resource Owner - User
 
 
 How 
-this is how you know people have started going mad for real bro
+    .User clicks “Login with Google”
+    .The OAuth Client redirects the user to Google.
+    .User logs in & grants permission
+    .Google verifies the user and asks what data the app can access.
+    .Authorization Server issues an Access Token
+    .Token is sent to the OAuth Client.
+    .Client uses Access Token to request data
+    .Access token is added to API requests.
+    .(Optional) Refresh Token is given
+    .Used to obtain new access tokens without re-login, useful for long-term access.
+
+
+
+
+Types of OAuth tokens
+.Access token
+    .short-lived token that allows the client to access protected APIs on behalf of the user
+    .typically valid for minutes to an hour
+    .sent with every API request - usually in the Auth header
+    .cannot be used to refresh or extend sessions
+    .scoped only provides access to specific permitted data
+    .if leaked, attackers can access user data temporarily
+
+
+.Refresh token
+    .long-lived token used to obtain new access tokens without asking the user to login again
+    .valid for days, months, or until revoked
+    .never sent to APIs directly only exchanged with the provider
+    .helps maintain persistent sessions securely
+    .stored securely on the client - server-side apps, mobile secure storage
+    .can be revoked by the user or provider if suspicious activity occurs 
+
+
+
+Benefits
+    .no password sharing with third-party apps
+    .fine-grained permissions - only specific data is shared
+    .tokens can expire so it reduces risk
+    .works across multiple platforms
+    .supports secure single sign-on (SSO)
+
+    
