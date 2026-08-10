@@ -1,0 +1,121 @@
+
+
+Pagination
+
+.helps in enabling efficient data retrieval by breaking down results into manageable loads
+.involves the use of LIMIT and OFFSET clauses in SQL queries
+
+
+Cursor Pagination
+    .paginating through a large set of results in a DB with the use of a cursor or pointer to keep track of the current position 
+    in the result set. 
+
+
+
+
+
+
+File Organization
+    .method of storing data records in a file so efficient access
+    .determines how data is arranged, stored, and retrieved from physical storage
+        .helps in faster selection of records
+        .different operations like inserting and deleting different records are faster
+        .prevents insertion of duplicate records via various operations
+        .helps minimize data storage costs 
+
+
+
+    .Types 
+        .Sequential file Organization
+            .files stored one after another in sequential manner
+                
+                .Pile-file method
+                    .store files in the order in which they are inserted into tables
+
+                .Sorted file method
+                    .records are sorted in ascending or descending manner 
+                    .the sorting may be based on Primary Key or any other key
+
+                .Heap file Organization
+                    .works with data blocks 
+                    .records are inserted at the end of the file, into the data blocks
+                    .no sorting or ordering is required 
+
+
+
+                
+File uploads
+    .its the importing external files into a DB table 
+    .can be storing the actual file as binary data directly inside the DB
+     OR storing the file as an external server and saving only its path string in the DB
+
+
+
+
+
+
+Rate Limiting in System Design
+    .technique used to regulate how quickly a system processes or serves incoming requests or actions 
+    .limits the quantity or frequency of client requests to prevent overload, maintain stability, and ensure fair 
+      resource distribution 
+    .reduces the risk of resource abuse and denial-of-service (DoS) attacks, improving performance, reliablity, and Security
+    .used in web servers, APIs, network traffic mgt, and DB access
+    .ensures fair resource usage among multiple users and improves overall system reliability and performance
+
+
+
+    .Use Cases 
+        .API rate limiting - to control the volume of client requests, ensure fair access to resources, and prevent abuse
+        .Web server rate limiting - as a defense against denial of service attacks and to prevent server overload
+        .database rate limitation - keeps the DB server from experiencing undue strain and preserve DB performance
+        .login rate restriction - to stop password guessing and brute-force assaults 
+
+
+    Types of R.L.
+        .IP-based 
+            .limits the number of requests a client can make based on their IP address within a specific time period
+            .used to prevent abuse like bots and denial of service attacks
+            .blocks excessive traffic from a single source
+            .can be bypassed using VPNs, proxies, or botnets
+            .may block legitimate users using the same IP address
+
+        .Server-based
+            .limits the number of requests a server can handle within a specific time period to prevent overload and maintain performance
+            .ensures fair resource usage so no single user degrades performance
+            .can be bypassed if requests are spread across multiple servers
+            .legitimate users may face delays if limits are too strict or traffic is high 
+
+        .Geography-based 
+            .limits requests based on the geographic location of the user's IP address 
+            .useful for controlling traffic from specific regions and improving security or compliance 
+            .reduces malicious traffic from high-risk regions/ complying with regional laws and regulations
+            .can be bypassed using VPNs or proxy servers/ may block genuine users traveling or using international networks 
+
+        
+
+    Rate Limiting Algorithms 
+        .Token bucket 
+            .controls request rate by adding tokens to a bucket at a fixed rate 
+            .each incoming request consumes a token, and requests are only allowed if tokens are available 
+        .Leaky bucket 
+            .controls the rate of rewquests by processing them at a fixed and constant rate 
+            .incoming requests are placed in a queue, and handled in order at a steady rate, regardless of how fast they arrive 
+        .Fixed window counting
+            .limits requests by counting how many requests are made within a fixed time window 
+            .if requests exceed a defined limit, further requests are rejected until the next window starts 
+        .Sliding window log
+            .algorithm tracks each request by storing its timestamp and calculates the request rate over a moving time window 
+            .older requests outside the window are removed, ensuring accurate rate limiting 
+
+
+
+    Client vs Server-side R>L>
+
+
+    Challenges
+        .latency - possible, particularly when requests are throttled or delayed as a result of exceeding rate constraints 
+        .false positives - if RL logic is flawed or very restrictive rate restrictions, it may unintentionally block valid requests causing service interruptions 
+        .configuration complexity - difficulties setting up rate limits especially in systems with a variety of traffic patterns and use cases
+        .scalability challenges - if not done well, RL methods create bottlenecks under excessive load 
+        
+
