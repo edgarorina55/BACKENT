@@ -1,0 +1,41 @@
+Software Testing
+
+.process of evaluating aa software app to verify that it works as expected and it meets specified requirements
+.helps identify defects, errors, and missing functionalities before getting delivered to users 
+.ensures reliability, security, and performance 
+
+
+
+
+Types
+    .Manual 
+        .testers execute test cases manually without using automation tools
+        .helps verify application functionality and identify defects by comparing actual results with expected results
+            e.g manually checking whether a login page accepts valid credentials 
+
+    
+    .Automation 
+        .test cases are executed using scripts and automation tools 
+        .helps automate repetitive tasks, improving testing speed, accuracy, and efficiency
+            e.g script automatically testing the login functionality and verifying the result 
+
+
+    
+Terms
+    .test case - set of inputs, conditions, and expected results used to verify whether a specific functionality of the software works correctly
+    .test suite - collection of multiple test cases grouped together to test different features of an application in various scenarios
+    .test plan - document defining the scope, objectives, resources, schedule, and approach for testing activities
+    .defects/bugs - errors or issues in the software where actual results differ from expected results, affecting functionality or performance
+    .regression testing - testing performed after changes or updates to ensure existing features still work correctly and no new issues are introduced 
+
+
+Common tools used 
+    .Selenium: An open-source automation tool used for testing web applications. It supports multiple programming languages like Java, Python, and C#.
+    .JIRA: A popular tool for bug tracking, issue management, and project tracking. It helps teams manage defects efficiently.
+    .TestNG: A testing framework used with Selenium for organizing test cases, generating reports, and managing test execution.
+    .Postman: A tool used for API testing. It allows testers to send requests, validate responses, and automate API tests.
+    .LoadRunner: A performance testing tool used to simulate multiple users and analyze system behavior under load.
+    .BrowserStack: A cloud-based testing platform used for cross-browser and cross-device testing of web and mobile applications. It allows testing on real browsers, operating systems, and mobile devices without requiring a local setup.
+
+
+    
