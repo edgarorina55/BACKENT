@@ -1,0 +1,29 @@
+Stored Procedures
+
+    .group SQL statements and business logic into a single, reusable unit that runs inside the DB
+    .helps:
+        .execute multiple SQL statements as one operation
+        .accept input and returning output values
+        .reduce repeated code in applications
+        .enforce consistent business rules across systems 
+
+    
+Types
+    .categorized based on their use case and functionality
+
+
+    .system-stored 
+        .predefined stored procedures provided by the SQL server for performing admin tasks such as DB management, troubleshooting 
+        or system configuration 
+
+    .user-defined 
+        .created by users to perform specific business operations 
+    
+    .extended 
+        .those that allow SQL server to execute external programs written in other languages 
+
+    .CLR 
+        .those written in .NET languages and executed in SQL server 
+
+
+        
