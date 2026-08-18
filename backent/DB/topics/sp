@@ -26,4 +26,28 @@ Types
         .those written in .NET languages and executed in SQL server 
 
 
-        
+
+Benefits
+    .performance optimization
+    .security - limit direct access to tables and protect sensitive data 
+    .code reusability 
+    .reduced network traffic - multiple operations run in one call
+    .easy maintenance - updating a procedure updates all its uses automatically
+
+
+
+
+Real world uses 
+    .order processing systems - automatically inserts new orders, updates stock, and generates new invoices
+    .employee management system - calculates salaries, deducts taxes, and creates monthly payslips
+    .data validation - checks data before inserting new records 
+    .audit logs - tracks changes to sensitive data such as user roles, and permissions for security 
+
+
+
+Best practices
+    .keep it simple 
+    .use error handling 
+    .avoid cursors - use set-based queries where possibble
+    .use parameters - for flexibility 
+    
