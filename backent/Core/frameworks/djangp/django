@@ -1,22 +1,96 @@
-django
-
-    .simplifies web devt through reusable components and built-in features like authentication, DB connectivity, and CRUD operations
-    following the DRY (dont repeat yourself) principle
-    .it follows the MVT (model-view-template) design pattern:
-        .model - reps the data you want to display, typically sourced from a DB
-        .view - handles incoming requests and returns the appropriate template and content based on the user's request 
-        .template - text-file that defines the structure of the web page and includes logic for displaying the data
-
-     
-     why it:
-        .built-in admin - ready to use admin interface to manage my website data easily
-        .security - built-in protect against common security threats like SQL injection, XSS, and CSRF
-        .reusability - it follows the Don't Repeat Yourself principle, encouraging reusable code components 
-        .scalable - Object Relational Mapping - easily interacts with my DB without writing SQL queries
-        .URL routing - clean and simple URL structure that maps URLs to views in my app
-        .templating engine - separate my HTML from Python code using Django's templating system, making dynamic content easy to manage 
+Notes
 
 
+.high-level Python web framework for building secure, scalable backend frameworks fast 
+.handles the backend of a web app:
+            .routing - URLs > functions
+            .DB models - ORM 
+            .authentication
+            .admin dashboard
+            .security
+            .templates - HTML rendering
+            .middleware
+            .forms
+            .sessions
+            .caching 
+
+.core philosophy 
+    ."batteries-included" - no need to install packages 
+    .DRY principle - write logic once, reuse everywhere 
+    .convention over configuration - gives a standard structure so that the project stays clean and predictable 
+
+.django project structure 
+    .myproject/
+        manage.py - commandline tools for migraitions, running server, creating apps 
+        myproject/
+            settings.py   - project's brain; DB, apps, middleware, security
+            urls.py  - routing table 
+            asgi/wsgi.py   -  deployment entry points 
+
+.django's MVT architecture 
+    .model - DB layer; tables represented as Python classes 
+    .view - business logic; what happens when a request hits the server 
+    .template - HTML rendering; what the user sees 
+    
+    .it gives the flow:  user > url > view > model > template > response 
+
+.django's ORM
+    .write Python classes instead of writing SQL manually 
+    
+
+.django's admin 
+    .gives full admin dashboard instantly 
+    .no coding required 
+
+.django migrations 
+    .version control for my DB schema 
+    .use migrations to generate SQL when changing a model 
+
+
+.django security
+    .protects automatically from:
+        .SQL injection
+        .clickjacking
+        .session hijacking 
+
+
+.django use cases 
+    .good for:
+        .hospitals/inventory/CRMs/dashboards/APIs/authentication systems/admin-heavy apps
+
+    
 
 
 
+
+
+
+Project fundamentals 
+.creating a project
+    .root of everything 
+        .manage.py - command center
+        .settings.py - configuration brain
+        .urls.py - routing map
+        .wsgi.py/asgi.py - deployment entry points 
+
+
+.understanding the setting file 
+    .django becomes a framework and not a script 
+    .understand:
+        .installed_apps
+        .middleware
+        .templates
+        .databases
+        .static_url/media_url
+        .auth_user_model 
+
+    .all django workings are controlled here 
+
+.creating my first app
+    .a django project is a container
+    .an app is a functional module inside it 
+        .runs in the outer project directory:
+            .manage.py is what registers and manages apps
+            .djangp expects apps to be siblings of the inner project folder 
+            .keeps the project clean and modular 
+        

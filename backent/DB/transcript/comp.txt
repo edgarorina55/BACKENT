@@ -1,0 +1,91 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260704151703
+Username: LAPTOP-G1HKUK26\edgar
+RunAs User: LAPTOP-G1HKUK26\edgar
+Configuration Name: 
+Machine: LAPTOP-G1HKUK26 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 50160
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\edgar\BACKENT\backent\DB\transcript\comp.txt
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> mysql -u root -p
+4 rows in set (0.02 sec)
+
+mysql> SELECT * FROM employees
+    -> LIMIT (20)
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version fo
+r the right syntax to use near '(20)' at line 2
+mysql> SELECT *
+    -> FROM employees
+    -> LIMIT 25
+    -> ;
++--------+------------+-----------+-------------------------+---------+------------+-----------+
+| emp_id | first_name | last_name | email                   | dept_id | hire_date  | salary    |
++--------+------------+-----------+-------------------------+---------+------------+-----------+
+|     11 | John       | Doe       | john.doe@corp.com       |       1 | 2020-03-12 |  98000.00 |
+|     12 | Maria      | Lopez     | maria.lopez@corp.com    |       2 | 2019-07-22 | 112000.00 |
+|     13 | Samuel     | Kim       | sam.kim@corp.com        |       1 | 2021-01-15 |  87000.00 |
+|     14 | Linda      | Oti       | linda.oti@corp.com      |       3 | 2018-11-20 |  65000.00 |
+|     15 | Brian      | Carter    | brian.carter@corp.com   |       4 | 2022-04-10 |  72000.00 |
+|     16 | Alice      | Ngugi     | alice.ngugi@corp.com    |       1 | 2023-02-18 | 105000.00 |
+|     17 | Victor     | Stone     | victor.stone@corp.com   |       2 | 2020-09-05 |  99000.00 |
+|     18 | Grace      | Miller    | grace.miller@corp.com   |       3 | 2021-06-30 |  78000.00 |
+|     19 | Henry      | Owens     | henry.owens@corp.com    |       4 | 2019-12-11 |  54000.00 |
+|     20 | Diana      | Prince    | diana.prince@corp.com   |       1 | 2022-08-14 | 130000.00 |
+|     21 | Kevin      | Adams     | kevin.adams@corp.com    |       4 | 2020-05-19 |  68000.00 |
+|     22 | Sarah      | Johnson   | sarah.johnson@corp.com  |       2 | 2021-03-25 | 118000.00 |
+|     23 | Peter      | Wanjala   | peter.wanjala@corp.com  |       1 | 2023-01-09 |  94000.00 |
+|     24 | Nancy      | Kerr      | nancy.kerr@corp.com     |       3 | 2019-10-17 |  59000.00 |
+|     25 | Tom        | Brady     | tom.brady@corp.com      |       4 | 2022-07-01 |  88000.00 |
+|     26 | Emily      | Stone     | emily.stone@corp.com    |       2 | 2020-02-14 | 102000.00 |
+|     27 | Robert     | King      | robert.king@corp.com    |       1 | 2021-09-03 |  97000.00 |
+|     28 | Janet      | Muriuki   | janet.muriuki@corp.com  |       3 | 2023-04-21 |  72000.00 |
+|     29 | Chris      | Young     | chris.young@corp.com    |       4 | 2018-12-28 |  56000.00 |
+|     30 | Angela     | Park      | angela.park@corp.com    |       2 | 2022-10-10 | 135000.00 |
+|     31 | George     | Maina     | george.maina@corp.com   |       1 | 2020-06-12 |  89000.00 |
+|     32 | Faith      | Kariuki   | faith.kariuki@corp.com  |       3 | 2021-11-02 |  61000.00 |
+|     33 | Michael    | Brown     | michael.brown@corp.com  |       4 | 2019-03-18 |  75000.00 |
+|     34 | Sophia     | Turner    | sophia.turner@corp.com  |       2 | 2023-05-27 | 125000.00 |
+|     35 | Daniel     | Ochieng   | daniel.ochieng@corp.com |       1 | 2022-01-30 | 115000.00 |
++--------+------------+-----------+-------------------------+---------+------------+-----------+
+25 rows in set (0.00 sec)
+
+mysql> SELECT *
+    -> FROM attendance
+    -> ;
+Empty set (0.00 sec)
+
+mysql> SELECT *
+    -> FROM departments
+    -> ;
++---------+----------------+
+| dept_id | dept_name      |
++---------+----------------+
+|       1 | Finance        |
+|       2 | IT             |
+|       3 | Human Resource |
+|       4 | Operations     |
++---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> DROP DATABASE company_mgt
+    -> ;
+Query OK, 4 rows affected (0.04 sec)
+
+mysql> exit;
+Bye
+PS C:\Users\edgar\BACKENT\backent\DB\transcripts> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260704152129
+**********************

@@ -99,9 +99,14 @@ Registering models in django admin
 
 
     
-Model Field Types 
+Model Fields 
 .fields define the structure of DB tables 
-    .each field specifies:
+.define the kind of data a DB column will store and how the data should be handled 
+    .each field:
+        .represents a specific data type and controls how data is stored and validated 
+        .decides the default form widget used for user input 
+        .django uses field classes to determine the DB column type, form widget, and validation rules 
+        .reserved names should not be used as field names to avoid conflicts with django's model system 
         .type of data it stores 
         .constraints and validations on the data 
             CharField: Stores short text (like names or titles)

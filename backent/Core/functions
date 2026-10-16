@@ -1,0 +1,42 @@
+Functions
+
+    .reusable action 
+        .give it input, it gives output 
+
+
+
+
+Classes
+    .blueprint for creating objects 
+        .is like a patient chart template: 
+            .every patient has name, age, vitals; but each patient has different values
+        .class defines structure, object is the actual patient
+
+
+        class Patient:   - blueprint
+            def __init__(self, name, age):   - constructor method to initialize object
+                self.name = name      - self refers to the instance being created ( the object itself)
+                self.age = age 
+
+    .attributes are assigned inside the object (name, age) - these are the properties of the Patient
+        .it is attaching data to the object 
+
+.methods are always defined inside the class 
+.self is a method parameter that refers to the instance of the class
+__init__ is the constructor method that is automatically called when a new object is created from the class
+.def is used to define a method inside a class 
+.an instance is an individual object created from a class 
+.an attribute is a variable that belongs to an instance of a class 
+.object is a specific instance of a class that contains data(attributes) and methods(behaviors)
+    .if the class is the blueprint, the object is the actual house built from that blueprint
+
+
+    class - blueprint for creating objects
+    .object - actual thing
+    .instance - specific object created from a class
+    .attribute - variable that belongs to an instance of a class
+    .method - function defined inside a class  
+            .describes the behaviors of the objects created from the class
+    .self - refers to the instance of the class, used to access attributes and methods within the class
+
+
